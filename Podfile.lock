@@ -1,6 +1,4 @@
 PODS:
-  - Firebase (4.7.0):
-    - Firebase/Core (= 4.7.0)
   - Firebase/Core (4.7.0):
     - FirebaseAnalytics (= 4.0.5)
     - FirebaseCore (= 4.0.12)
@@ -22,7 +20,7 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
-  - Firebase (~> 4.7)
+  - Firebase/Core
 
 SPEC CHECKSUMS:
   Firebase: dbfb98ccec2dcfcd21ab9cc1b4981a3f3c8c5e26
@@ -32,6 +30,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: f000b559c191ada79ffd8e78259409c18e1f1194
+PODFILE CHECKSUM: cefecce827ee88a52bc847e19247699029b763a3
 
 COCOAPODS: 1.3.1

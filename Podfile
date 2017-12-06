@@ -6,5 +6,5 @@ target 'Kevin' do
   use_frameworks!
 
   # Pods for Kevin
-	pod 'Firebase', '~> 4.7'
+	pod ’Firebase/Core'
 end

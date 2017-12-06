@@ -12,6 +12,7 @@
 		24D5CAA01FD5D19C00B1EDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */; };
 		24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */; };
 		24D5CAA51FD5D19C00B1EDD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CAA31FD5D19C00B1EDD7 /* LaunchScreen.storyboard */; };
+		24D5CAAD1FD84F7A00B1EDD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CAAC1FD84F7A00B1EDD7 /* GoogleService-Info.plist */; };
 		99590790FE8527CD41999B44 /* Pods_Kevin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D5CAA41FD5D19C00B1EDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D5CAA61FD5D19C00B1EDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D5CAAC1FD84F7A00B1EDD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		284E604B31FA1165D25C509A /* Pods-Kevin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.debug.xcconfig"; sourceTree = "<group>"; };
 		53B8520AB50839189DB0FB70 /* Pods-Kevin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.release.xcconfig"; sourceTree = "<group>"; };
 		F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kevin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */,
 				24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */,
 				24D5CAA31FD5D19C00B1EDD7 /* LaunchScreen.storyboard */,
+				24D5CAAC1FD84F7A00B1EDD7 /* GoogleService-Info.plist */,
 				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
 			);
 			path = Kevin;
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D5CAA51FD5D19C00B1EDD7 /* LaunchScreen.storyboard in Resources */,
+				24D5CAAD1FD84F7A00B1EDD7 /* GoogleService-Info.plist in Resources */,
 				24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */,
 				24D5CAA01FD5D19C00B1EDD7 /* Main.storyboard in Resources */,
 			);
