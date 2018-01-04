@@ -7,4 +7,5 @@ target 'Kevin' do
 
   # Pods for Kevin
 	pod ’Firebase/Core'
+	pod ‘Firebase/Auth’
 end
