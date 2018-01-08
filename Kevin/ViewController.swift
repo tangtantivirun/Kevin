@@ -19,36 +19,46 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         if (Auth.auth().currentUser != nil) {
-            self.pressentLoggedInScreen()
-        }
-    }
-    
-    @IBAction func createAccountAction(_ sender: Any) {
-        if let email = emailTextField.text, let password = passwordTextField.text {
-            Auth.auth().createUser(withEmail: email, password: password, completion: {user, error in
-                if let firebaseError = error{
-                    print(firebaseError.localizedDescription)
-                    return
-                }
-                 self.pressentLoggedInScreen()
-            })
+            print("success")
         }
     }
     @IBAction func loginTapped(_ sender: Any) {
-        if let email = emailTextField.text, let password = passwordTextField.text{
-            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
-                if let firebaseError = error {
-                print(firebaseError.localizedDescription)
-                return
+        if self.emailTextField.text == "" || self.passwordTextField.text == "" {
+            
+            //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
+            
+            let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+        } else {
+            
+            Auth.auth().signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
+                
+                if error == nil {
+                    
+                    //Print into the console if successfully logged in
+                    print("You have successfully logged in")
+                    
+                    //Go to the HomeViewController if the login is sucessful
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                    self.present(vc!, animated: true, completion: nil)
+                    
+                } else {
+                    
+                    //Tells the user that there is an error and then gets firebase to tell them the error
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
             }
-          self.pressentLoggedInScreen()
-        })
         }
-    }
-    func pressentLoggedInScreen() {
-        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let loggedInViewController:LoggedInViewController = storyboard.instantiateViewController(withIdentifier:"LoggedInViewController") as! LoggedInViewController
-        self.present(loggedInViewController, animated: true, completion: nil)
     }
 }
 
