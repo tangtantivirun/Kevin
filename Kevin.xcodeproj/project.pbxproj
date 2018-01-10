@@ -12,6 +12,8 @@
 		243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
+		24D12BD420030F8E00491EC6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D12BD320030F8E00491EC6 /* Home.storyboard */; };
+		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
 		24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5CA9A1FD5D19C00B1EDD7 /* AppDelegate.swift */; };
 		24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */; };
 		24D5CAA01FD5D19C00B1EDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		243AED932001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoggedInViewController.storyboard; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		24D12BD320030F8E00491EC6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		24D5CA971FD5D19C00B1EDD7 /* Kevin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kevin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D5CA9A1FD5D19C00B1EDD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				243AED902001DCFF007DF4C6 /* LaunchScreen.storyboard */,
+				24D12BD320030F8E00491EC6 /* Home.storyboard */,
 				243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */,
 				24D5CA9A1FD5D19C00B1EDD7 /* AppDelegate.swift */,
 				24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */,
@@ -82,6 +87,7 @@
 				243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */,
 				24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */,
 				24D12BD12002B35200491EC6 /* SignUpVC.swift */,
+				24D12BD52003110D00491EC6 /* HomeVC.swift */,
 			);
 			path = Kevin;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 				24D5CAAD1FD84F7A00B1EDD7 /* GoogleService-Info.plist in Resources */,
 				243AED962001DCFF007DF4C6 /* LaunchScreen.storyboard in Resources */,
 				243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */,
+				24D12BD420030F8E00491EC6 /* Home.storyboard in Resources */,
 				24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */,
 				24D5CAA01FD5D19C00B1EDD7 /* Main.storyboard in Resources */,
 			);
@@ -241,6 +248,7 @@
 				243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */,
 				24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */,
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,
+				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */,
 				24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */,
 			);
