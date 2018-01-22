@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24216ECC2014189900457CD2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24216ECB2014189900457CD2 /* GradientView.swift */; };
+		24216ED22015993900457CD2 /* PeerTutorTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED12015993900457CD2 /* PeerTutorTab.storyboard */; };
 		243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */; };
 		243AED962001DCFF007DF4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED902001DCFF007DF4C6 /* LaunchScreen.storyboard */; };
 		243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		24216ECB2014189900457CD2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		24216ED12015993900457CD2 /* PeerTutorTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PeerTutorTab.storyboard; sourceTree = "<group>"; };
 		243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		243AED912001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		243AED932001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoggedInViewController.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		24D5CA991FD5D19C00B1EDD7 /* Kevin */ = {
 			isa = PBXGroup;
 			children = (
+				24216ED12015993900457CD2 /* PeerTutorTab.storyboard */,
 				243AED902001DCFF007DF4C6 /* LaunchScreen.storyboard */,
 				243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */,
 				24D5CA9A1FD5D19C00B1EDD7 /* AppDelegate.swift */,
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D5CAAD1FD84F7A00B1EDD7 /* GoogleService-Info.plist in Resources */,
+				24216ED22015993900457CD2 /* PeerTutorTab.storyboard in Resources */,
 				243AED962001DCFF007DF4C6 /* LaunchScreen.storyboard in Resources */,
 				243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */,
 				24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */,
