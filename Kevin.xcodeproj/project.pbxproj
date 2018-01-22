@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		24216ECC2014189900457CD2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24216ECB2014189900457CD2 /* GradientView.swift */; };
 		24216ED22015993900457CD2 /* PeerTutorTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED12015993900457CD2 /* PeerTutorTab.storyboard */; };
+		24216ED620159C2D00457CD2 /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED520159C2D00457CD2 /* Admin.storyboard */; };
+		24216ED820159C5C00457CD2 /* StudentTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED720159C5C00457CD2 /* StudentTab.storyboard */; };
+		24216EDA20159FC100457CD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED920159FC100457CD2 /* GoogleService-Info.plist */; };
 		243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */; };
 		243AED962001DCFF007DF4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED902001DCFF007DF4C6 /* LaunchScreen.storyboard */; };
 		243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */; };
@@ -19,13 +22,15 @@
 		24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */; };
 		24D5CAA01FD5D19C00B1EDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */; };
 		24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */; };
-		24D5CAAD1FD84F7A00B1EDD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CAAC1FD84F7A00B1EDD7 /* GoogleService-Info.plist */; };
 		99590790FE8527CD41999B44 /* Pods_Kevin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24216ECB2014189900457CD2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		24216ED12015993900457CD2 /* PeerTutorTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PeerTutorTab.storyboard; sourceTree = "<group>"; };
+		24216ED520159C2D00457CD2 /* Admin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
+		24216ED720159C5C00457CD2 /* StudentTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentTab.storyboard; sourceTree = "<group>"; };
+		24216ED920159FC100457CD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		243AED912001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		243AED932001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoggedInViewController.storyboard; sourceTree = "<group>"; };
@@ -38,7 +43,6 @@
 		24D5CA9F1FD5D19C00B1EDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D5CAA61FD5D19C00B1EDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24D5CAAC1FD84F7A00B1EDD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		284E604B31FA1165D25C509A /* Pods-Kevin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.debug.xcconfig"; sourceTree = "<group>"; };
 		53B8520AB50839189DB0FB70 /* Pods-Kevin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.release.xcconfig"; sourceTree = "<group>"; };
 		F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kevin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,8 @@
 		24D5CA991FD5D19C00B1EDD7 /* Kevin */ = {
 			isa = PBXGroup;
 			children = (
+				24216ED720159C5C00457CD2 /* StudentTab.storyboard */,
+				24216ED520159C2D00457CD2 /* Admin.storyboard */,
 				24216ED12015993900457CD2 /* PeerTutorTab.storyboard */,
 				243AED902001DCFF007DF4C6 /* LaunchScreen.storyboard */,
 				243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */,
@@ -84,7 +90,7 @@
 				24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */,
 				24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */,
 				24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */,
-				24D5CAAC1FD84F7A00B1EDD7 /* GoogleService-Info.plist */,
+				24216ED920159FC100457CD2 /* GoogleService-Info.plist */,
 				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
 				243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */,
 				24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */,
@@ -174,7 +180,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24D5CAAD1FD84F7A00B1EDD7 /* GoogleService-Info.plist in Resources */,
+				24216ED620159C2D00457CD2 /* Admin.storyboard in Resources */,
+				24216EDA20159FC100457CD2 /* GoogleService-Info.plist in Resources */,
+				24216ED820159C5C00457CD2 /* StudentTab.storyboard in Resources */,
 				24216ED22015993900457CD2 /* PeerTutorTab.storyboard in Resources */,
 				243AED962001DCFF007DF4C6 /* LaunchScreen.storyboard in Resources */,
 				243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */,
