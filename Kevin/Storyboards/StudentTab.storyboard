@@ -10,6 +10,57 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Student Tab View Controller-->
+        <scene sceneID="Jvh-06-ZKj">
+            <objects>
+                <tableViewController id="7Ke-kg-MgK" customClass="StudentTabViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nCe-2y-ak8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NSu-cu-CDR" customClass="StudentTableViewCell" customModule="Kevin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NSu-cu-CDR" id="VB0-f2-E3J">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAi-6i-LGE">
+                                            <rect key="frame" x="29" y="0.0" width="110" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v42-kE-QPa">
+                                            <rect key="frame" x="29" y="22" width="59" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7Ke-kg-MgK" id="hw7-iV-te5"/>
+                            <outlet property="delegate" destination="7Ke-kg-MgK" id="RL0-zF-E6a"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="RZR-Bf-MFl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3G0-Ar-yLJ">
+                            <connections>
+                                <segue destination="O3l-rO-SDk" kind="show" id="K66-Bf-1NJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tM1-t4-hzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2122" y="2319"/>
+        </scene>
         <!--Add-->
         <scene sceneID="dtC-qU-di3">
             <objects>
@@ -83,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWR-8G-WYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192.8" y="2323.9880059970019"/>
+            <point key="canvasLocation" x="2844" y="2323"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="u5M-Tb-Yxa">
@@ -96,9 +147,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="O3l-rO-SDk" kind="relationship" relationship="viewControllers" id="A5k-NL-hfD"/>
                         <segue destination="BHX-NW-GIF" kind="relationship" relationship="viewControllers" id="6Ml-5s-F8R"/>
                         <segue destination="OZ2-Y9-u3N" kind="relationship" relationship="viewControllers" id="BIL-Xx-DqF"/>
+                        <segue destination="3Fp-DS-ROf" kind="relationship" relationship="viewControllers" id="Cyy-pP-810"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ItU-5O-sns" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fy-FV-Beq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-623.20000000000005" y="2993.2533733133437"/>
+            <point key="canvasLocation" x="-578" y="3038"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0ja-bY-Ura">
@@ -183,13 +234,13 @@
                                 <rect key="frame" x="16" y="109" width="343" height="472"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Xxxxx was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
+                                <string key="text">Xxxxx was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
 
 One of our favorite things about our fully residential community is our ability as students to meet with each other at nearly any time of the day. Student friendships and collaboration is at the center of the community, both academically and in campus culture as a whole. We thought of this app as an opportunity to make it easier for students to get help in their subjects, on the surface, but also to increase student collaboration as a whole.
 
 We’re hoping the app will continue to evolve, eventually including in-app messaging, among other things. Be sure to let either of us know if you have any ideas!
 
-We put a lot of thought into it, and we hope you love it.</mutableString>
+We put a lot of thought into it, and we hope you love it.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -222,7 +273,7 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RZ-xu-pOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-463.19999999999999" y="3724.5877061469268"/>
+            <point key="canvasLocation" x="-631" y="3712"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nUK-bg-y9e">
@@ -236,14 +287,14 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
                                 <rect key="frame" x="16" y="116" width="343" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">As a student, you will be able to make requests for assistance from the peer tutors, and unlike ever before, you will be able to do so from your location. Your request will include the subject you need help in, your choice from several pre-approved locations, and when (if you want a time delay for some reason), as well as any additional information you’d like to add. 
+                                <string key="text">As a student, you will be able to make requests for assistance from the peer tutors, and unlike ever before, you will be able to do so from your location. Your request will include the subject you need help in, your choice from several pre-approved locations, and when (if you want a time delay for some reason), as well as any additional information you’d like to add. 
 
 To add a request, just go to the second/middle tab and fill out that information. When a peer tutor accepts it, you will be notified. It will automatically delete (and notify you) after fifteen minutes from the time you requested to meet, or you can cancel at any time.
 
 With the map functionality, you will be able to see locations of peer tutors who are on-duty and logged in. If you submit a request and consent to your location being shown, peer tutors will be able to see you as well as other students who have current requests. This feature enables peer tutors to find you more accurately as well as you to judge whether there are peer tutors in your vicinity.
 
 If needed, admins have the ability to disable specific user accounts and bar access to the app.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -261,7 +312,7 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybN-4a-LGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="2993"/>
+            <point key="canvasLocation" x="214" y="3039"/>
         </scene>
         <!--Map-->
         <scene sceneID="ian-2Y-BWZ">
@@ -277,7 +328,7 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0Y-kb-5Kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2231.1999999999998" y="2831.3343328335836"/>
+            <point key="canvasLocation" x="1234" y="3050"/>
         </scene>
         <!--Item-->
         <scene sceneID="HyN-Fl-EPZ">
@@ -296,7 +347,26 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFT-NM-dd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-961.60000000000002" y="2993.7031484257873"/>
+            <point key="canvasLocation" x="-1338" y="3037"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="s1a-pa-F1D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Fp-DS-ROf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="FYh-vP-Rgt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WaZ-9Z-OJ3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Ke-kg-MgK" kind="relationship" relationship="rootViewController" id="DvX-jb-uB0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oij-oz-y8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1340" y="2319"/>
         </scene>
     </scenes>
     <resources>

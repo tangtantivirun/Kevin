@@ -13,8 +13,10 @@
 		24216ED820159C5C00457CD2 /* StudentTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED720159C5C00457CD2 /* StudentTab.storyboard */; };
 		24216EDA20159FC100457CD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED920159FC100457CD2 /* GoogleService-Info.plist */; };
 		243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */; };
-		243AED962001DCFF007DF4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED902001DCFF007DF4C6 /* LaunchScreen.storyboard */; };
 		243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */; };
+		2473EB0D201D069100CE838F /* StudentTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB0C201D069100CE838F /* StudentTabViewController.swift */; };
+		2473EB0F201D08D600CE838F /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB0E201D08D600CE838F /* StudentTableViewCell.swift */; };
+		2473EB15201D0B7100CE838F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2473EB14201D0B7100CE838F /* Default-568h@2x.png */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
 		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
@@ -30,10 +32,12 @@
 		24216ED12015993900457CD2 /* PeerTutorTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PeerTutorTab.storyboard; sourceTree = "<group>"; };
 		24216ED520159C2D00457CD2 /* Admin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
 		24216ED720159C5C00457CD2 /* StudentTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentTab.storyboard; sourceTree = "<group>"; };
-		24216ED920159FC100457CD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		24216ED920159FC100457CD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Kevin/Service/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
-		243AED912001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		243AED932001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoggedInViewController.storyboard; sourceTree = "<group>"; };
+		2473EB0C201D069100CE838F /* StudentTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTabViewController.swift; sourceTree = "<group>"; };
+		2473EB0E201D08D600CE838F /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		2473EB14201D0B7100CE838F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -60,9 +64,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2473EB10201D098500CE838F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				24216ED520159C2D00457CD2 /* Admin.storyboard */,
+				24216ED12015993900457CD2 /* PeerTutorTab.storyboard */,
+				24216ED720159C5C00457CD2 /* StudentTab.storyboard */,
+				243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */,
+				24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2473EB11201D09B600CE838F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */,
+				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
+				24216ED920159FC100457CD2 /* GoogleService-Info.plist */,
+				24216ECB2014189900457CD2 /* GradientView.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		24D5CA8E1FD5D19B00B1EDD7 = {
 			isa = PBXGroup;
 			children = (
+				2473EB14201D0B7100CE838F /* Default-568h@2x.png */,
 				24D5CA991FD5D19C00B1EDD7 /* Kevin */,
 				24D5CA981FD5D19C00B1EDD7 /* Products */,
 				78F04AC350959B680B322676 /* Pods */,
@@ -81,22 +109,16 @@
 		24D5CA991FD5D19C00B1EDD7 /* Kevin */ = {
 			isa = PBXGroup;
 			children = (
-				24216ED720159C5C00457CD2 /* StudentTab.storyboard */,
-				24216ED520159C2D00457CD2 /* Admin.storyboard */,
-				24216ED12015993900457CD2 /* PeerTutorTab.storyboard */,
-				243AED902001DCFF007DF4C6 /* LaunchScreen.storyboard */,
-				243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */,
 				24D5CA9A1FD5D19C00B1EDD7 /* AppDelegate.swift */,
 				24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */,
-				24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */,
-				24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */,
-				24216ED920159FC100457CD2 /* GoogleService-Info.plist */,
-				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
 				243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */,
 				24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */,
 				24D12BD12002B35200491EC6 /* SignUpVC.swift */,
 				24D12BD52003110D00491EC6 /* HomeVC.swift */,
-				24216ECB2014189900457CD2 /* GradientView.swift */,
+				2473EB0E201D08D600CE838F /* StudentTableViewCell.swift */,
+				2473EB0C201D069100CE838F /* StudentTabViewController.swift */,
+				2473EB11201D09B600CE838F /* Service */,
+				2473EB10201D098500CE838F /* Storyboards */,
 			);
 			path = Kevin;
 			sourceTree = "<group>";
@@ -184,8 +206,8 @@
 				24216EDA20159FC100457CD2 /* GoogleService-Info.plist in Resources */,
 				24216ED820159C5C00457CD2 /* StudentTab.storyboard in Resources */,
 				24216ED22015993900457CD2 /* PeerTutorTab.storyboard in Resources */,
-				243AED962001DCFF007DF4C6 /* LaunchScreen.storyboard in Resources */,
 				243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */,
+				2473EB15201D0B7100CE838F /* Default-568h@2x.png in Resources */,
 				24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */,
 				24D5CAA01FD5D19C00B1EDD7 /* Main.storyboard in Resources */,
 			);
@@ -261,7 +283,9 @@
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,
 				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				24216ECC2014189900457CD2 /* GradientView.swift in Sources */,
+				2473EB0F201D08D600CE838F /* StudentTableViewCell.swift in Sources */,
 				24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */,
+				2473EB0D201D069100CE838F /* StudentTabViewController.swift in Sources */,
 				24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,14 +293,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		243AED902001DCFF007DF4C6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				243AED912001DCFF007DF4C6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
