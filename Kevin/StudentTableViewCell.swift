@@ -10,13 +10,15 @@ import Foundation
 import UIKit
 
 class StudentTableViewCell: UITableViewCell {
-   
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var subjectLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(isSelected, animated: animated)
+        super.setSelected(selected, animated: animated)
     }
-    
 }
