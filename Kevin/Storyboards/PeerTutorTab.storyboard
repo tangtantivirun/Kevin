@@ -98,13 +98,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sMn-hT-RfL">
                                 <rect key="frame" x="16" y="121" width="343" height="497"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">When logged in as a tutor, you will be notified of requests for tutor assistance submitted by students, which will include information such as the student name, subject, description, and most crucially location. You will be able to accept or ignore these requests using the checkboxes located on the request box, which if accepted removes it from the list of requests and notifies the student. Then, you go to that student’s location and help them. You will also be able to see history of students helped by peer tutors, at the bottom of the same far-left tab by which you came to this page.
+                                <string key="text">When logged in as a tutor, you will be notified of requests for tutor assistance submitted by students, which will include information such as the student name, subject, description, and most crucially location. You will be able to accept or ignore these requests using the checkboxes located on the request box, which if accepted removes it from the list of requests and notifies the student. Then, you go to that student’s location and help them. You will also be able to see history of students helped by peer tutors, at the bottom of the same far-left tab by which you came to this page.
 
 With the map functionality, you will be able to see locations of students requesting help as well as those of on-duty peer tutors, to enable you and the group of peer tutors to optimize resources in terms of who’s accepting which requests. Students can see where you are (when you’re logged in and on-duty of course!) but not where other students are.
 
 If you have any trouble at all with a student, admins are able to disable accounts and bar access to the app as needed.
 
-If at any point you want to seek help for yourself, you’re able and encouraged to use the student part of the app for yourself! Just use the back button to the screen where it asks for your role; peer tutors aren’t restricted from the student part of the app, just vice versa.</mutableString>
+If at any point you want to seek help for yourself, you’re able and encouraged to use the student part of the app for yourself! Just use the back button to the screen where it asks for your role; peer tutors aren’t restricted from the student part of the app, just vice versa.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -147,13 +147,13 @@ If at any point you want to seek help for yourself, you’re able and encouraged
                                 <rect key="frame" x="16" y="109" width="343" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Xxxxx was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
+                                <string key="text">Xxxxx was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
 
 One of our favorite things about our fully residential community is our ability as students to meet with each other at nearly any time of the day. Student friendships and collaboration is at the center of the community, both academically and in campus culture as a whole. We thought of this app as an opportunity to make it easier for students to get help in their subjects, on the surface, but also to increase student collaboration as a whole.
 
 We’re hoping the app will continue to evolve, eventually including in-app messaging, among other things. Be sure to let either of us know if you have any ideas!
 
-We put a lot of thought into it, and we hope you love it.</mutableString>
+We put a lot of thought into it, and we hope you love it.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -183,6 +183,35 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
             <point key="canvasLocation" x="2984.8000000000002" y="657.12143928035982"/>
         </scene>
         <!--Item-->
+        <scene sceneID="bkF-SK-ulg">
+            <objects>
+                <tableViewController id="tLP-tE-JeF" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TPq-AT-MMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="IYG-pR-Wt3">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IYG-pR-Wt3" id="vAR-JH-QL6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tLP-tE-JeF" id="RZk-nZ-oRy"/>
+                            <outlet property="delegate" destination="tLP-tE-JeF" id="wEH-Dm-fkT"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="EW0-S8-3Nf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qw-3X-B6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="2548"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="Vgx-Ac-72R">
             <objects>
                 <viewController id="gRr-3g-aIp" sceneMemberID="viewController">
@@ -198,35 +227,20 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
             </objects>
             <point key="canvasLocation" x="1974" y="2066"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="dMG-kz-YD6">
-            <objects>
-                <viewController id="eqv-tW-sOm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SKE-NS-haH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="fEC-om-ETH"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NPc-zK-Qzy"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GqG-bs-mHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1212" y="2565"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OoE-wL-eIm">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qRF-EL-I4M" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iDg-f4-Yt4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="FeB-Ur-FF3" kind="relationship" relationship="viewControllers" id="XDi-7d-0Xt"/>
                         <segue destination="gRr-3g-aIp" kind="relationship" relationship="viewControllers" id="Ytc-o3-vnI"/>
-                        <segue destination="eqv-tW-sOm" kind="relationship" relationship="viewControllers" id="JU8-6S-Mx2"/>
+                        <segue destination="tLP-tE-JeF" kind="relationship" relationship="viewControllers" id="F3A-ht-LNy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNY-IS-i3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
