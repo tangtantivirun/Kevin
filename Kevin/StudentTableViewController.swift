@@ -13,9 +13,6 @@ class StudentTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load the sample data.
-        loadSampleSessions()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

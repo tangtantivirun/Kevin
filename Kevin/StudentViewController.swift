@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class StudentViewController: UIViewController {
+class StudentViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
+
 
