@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class StudentTableViewController: UITableViewController {
-    var sessions = [Session] ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +17,11 @@ class StudentTableViewController: UITableViewController {
         // Load the sample data.
         loadSampleSessions()
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    var sessions = [Session]()
     override func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1
@@ -36,15 +35,16 @@ class StudentTableViewController: UITableViewController {
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "StudentTableViewCell"
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: "StudentTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier") as! StudentTableViewCell
         
         // Configure the cell...
         guard tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) is StudentTableViewCell  else {
             fatalError("The dequeued cell is not an instance of StudentTableViewCell.")
         }
-        let session = sessions[indexPath.row]
-            cell.nameLabel.text = sessions.name
-            cell.subjectLabel.text = sessions.subject
+        let help = sessions[indexPath.row]
+        
+        cell.nameLabel?.text = help.name
+        cell.subjectLabel?.text = help.subject
 
         return cell
     }

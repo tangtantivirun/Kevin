@@ -17,7 +17,8 @@
 		2473EB0F201D08D600CE838F /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB0E201D08D600CE838F /* StudentTableViewCell.swift */; };
 		2473EB15201D0B7100CE838F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2473EB14201D0B7100CE838F /* Default-568h@2x.png */; };
 		2473EB17201D0C9C00CE838F /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB16201D0C9C00CE838F /* StudentTableViewController.swift */; };
-		2473EB1B201D84C800CE838F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB1A201D84C800CE838F /* Session.swift */; };
+		2473EB1D201D8AA200CE838F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB1C201D8AA200CE838F /* Session.swift */; };
+		2473EB1F201D8E7900CE838F /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB1E201D8E7900CE838F /* StudentViewController.swift */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
 		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
@@ -39,7 +40,8 @@
 		2473EB0E201D08D600CE838F /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		2473EB14201D0B7100CE838F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2473EB16201D0C9C00CE838F /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
-		2473EB1A201D84C800CE838F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		2473EB1C201D8AA200CE838F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		2473EB1E201D8E7900CE838F /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -117,11 +119,12 @@
 				24D12BD12002B35200491EC6 /* SignUpVC.swift */,
 				24D12BD52003110D00491EC6 /* HomeVC.swift */,
 				2473EB0E201D08D600CE838F /* StudentTableViewCell.swift */,
+				2473EB1E201D8E7900CE838F /* StudentViewController.swift */,
 				2473EB16201D0C9C00CE838F /* StudentTableViewController.swift */,
 				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
 				2473EB11201D09B600CE838F /* Service */,
 				2473EB10201D098500CE838F /* Storyboards */,
-				2473EB1A201D84C800CE838F /* Session.swift */,
+				2473EB1C201D8AA200CE838F /* Session.swift */,
 			);
 			path = Kevin;
 			sourceTree = "<group>";
@@ -281,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2473EB1B201D84C800CE838F /* Session.swift in Sources */,
+				2473EB1D201D8AA200CE838F /* Session.swift in Sources */,
 				243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */,
 				24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */,
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,
@@ -291,6 +294,7 @@
 				24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */,
 				24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */,
 				2473EB17201D0C9C00CE838F /* StudentTableViewController.swift in Sources */,
+				2473EB1F201D8E7900CE838F /* StudentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
