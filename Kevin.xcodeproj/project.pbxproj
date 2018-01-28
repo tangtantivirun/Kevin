@@ -121,10 +121,10 @@
 				2473EB0E201D08D600CE838F /* StudentTableViewCell.swift */,
 				2473EB1E201D8E7900CE838F /* StudentViewController.swift */,
 				2473EB16201D0C9C00CE838F /* StudentTableViewController.swift */,
+				2473EB1C201D8AA200CE838F /* Session.swift */,
 				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
 				2473EB11201D09B600CE838F /* Service */,
 				2473EB10201D098500CE838F /* Storyboards */,
-				2473EB1C201D8AA200CE838F /* Session.swift */,
 			);
 			path = Kevin;
 			sourceTree = "<group>";
