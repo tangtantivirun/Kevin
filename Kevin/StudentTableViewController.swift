@@ -12,15 +12,16 @@ import UIKit
 class StudentTableViewController: UITableViewController {
     var sessions = [Session] ()
     
-    private func loadSampleSessions() {
-        //create three sessions object
-        guard let session1 = Session(name: "Tang Tantivirun", subject: "Math") else { fatalError("Unable to instantiate session1")
-        }
-        guard let session2 = Session(name: "Victoria", subject: "Science") else { fatalError("Unable to instantiate session2")
-        }
-        guard let session3 = Session(name: "Rowan", subject: "Astro") else { fatalError("Unable to instantiate session3")
-        }
-        sessions += [session1, session2, session3]
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Load the sample data.
+        loadSampleSessions()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     override func numberOfSections(in tableView: UITableView) -> Int
     {
@@ -35,18 +36,26 @@ class StudentTableViewController: UITableViewController {
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "StudentTableViewCell"
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celldentifier", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "StudentTableViewCell", for: indexPath)
         
         // Configure the cell...
         guard tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) is StudentTableViewCell  else {
             fatalError("The dequeued cell is not an instance of StudentTableViewCell.")
         }
         let session = sessions[indexPath.row]
-        cell.nameLabel.text = sessions.name
-        cell.subjectLabel.text = sessions.subject
-        
+            cell.nameLabel.text = sessions.name
+            cell.subjectLabel.text = sessions.subject
+
         return cell
     }
-    
-    
+    private func loadSampleSessions() {
+        //create three sessions object
+        guard let session1 = Session(name: "Tang Tantivirun", subject: "Math") else { fatalError("Unable to instantiate session1")
+        }
+        guard let session2 = Session(name: "Victoria", subject: "Science") else { fatalError("Unable to instantiate session2")
+        }
+        guard let session3 = Session(name: "Rowan", subject: "Astro") else { fatalError("Unable to instantiate session3")
+        }
+        sessions += [session1, session2, session3]
+    }
 }
