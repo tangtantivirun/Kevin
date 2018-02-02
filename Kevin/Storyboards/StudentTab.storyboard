@@ -344,6 +344,7 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                     <navigationItem key="navigationItem" id="KSe-KQ-rE8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JZB-c3-TeB">
                             <connections>
+                                <action selector="addButtonDidTouch:" destination="44L-Jf-k3a" id="PMx-QH-LZv"/>
                                 <segue destination="O3l-rO-SDk" kind="show" id="heT-it-21O"/>
                             </connections>
                         </barButtonItem>
