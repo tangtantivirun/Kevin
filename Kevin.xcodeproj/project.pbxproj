@@ -24,6 +24,7 @@
 		24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */; };
 		24D5CAA01FD5D19C00B1EDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */; };
 		24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */; };
+		24EE44472025042A00DA0627 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */; };
 		99590790FE8527CD41999B44 /* Pods_Kevin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		24D5CA9F1FD5D19C00B1EDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D5CAA61FD5D19C00B1EDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		284E604B31FA1165D25C509A /* Pods-Kevin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.debug.xcconfig"; sourceTree = "<group>"; };
 		53B8520AB50839189DB0FB70 /* Pods-Kevin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.release.xcconfig"; sourceTree = "<group>"; };
 		F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kevin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */,
 				243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */,
 				24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */,
+				24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */,
 				24D12BD12002B35200491EC6 /* SignUpVC.swift */,
 				24D12BD52003110D00491EC6 /* HomeVC.swift */,
 				2473EB1C201D8AA200CE838F /* Session.swift */,
@@ -288,6 +291,7 @@
 				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				24216ECC2014189900457CD2 /* GradientView.swift in Sources */,
 				24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */,
+				24EE44472025042A00DA0627 /* CreateUsernameViewController.swift in Sources */,
 				24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

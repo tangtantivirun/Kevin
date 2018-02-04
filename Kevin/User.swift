@@ -8,18 +8,30 @@
 
 import Foundation
 import FirebaseAuth
+import FirebaseDatabase.FIRDataSnapshot
 
 struct User {
     let uid: String
-    let email: String
+    let username: String
     
-    init(authData: User) {
-        uid = authData.uid
-        email = authData.email
-    }
-    
-    init(uid: String, email: String) {
+    init(uid: String, username: String) {
         self.uid = uid
-        self.email = email
+        self.username = username
     }
+init?(snapshot: DataSnapshot) {
+    guard let dict = snapshot.value as? [String: Any],
+        let username = dict["username"] as? String
+        else { return nil }
+    
+        self.uid = snapshot.key
+        self.username = username
+    }
+//    userRef.observeSingleEvent(of: .value, with: { (snapshot) in
+//    if let user = User(snapshot: snapshot) {
+//        print("Welcome back, \(user.username).")
+//    } else {
+//    print("New user!")
+//    }
+//    })
 }
+
