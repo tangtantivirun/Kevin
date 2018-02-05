@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BradleyHand-Bold.ttf">
+            <string>BradleyHandITCTT-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="MBR-dE-11a">
@@ -117,14 +122,59 @@
                     <view key="view" contentMode="scaleToFill" id="1VQ-Lr-IDx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Admin! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tg-on-VNT">
+                                <rect key="frame" x="0.0" y="79" width="375" height="40"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="32"/>
+                                <color key="textColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rPl-FE-Qnl">
+                                <rect key="frame" x="0.0" y="173" width="375" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muI-ed-nlO">
+                                        <rect key="frame" x="137.5" y="0.0" width="100" height="30"/>
+                                        <state key="normal" title="About the App">
+                                            <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWt-Z3-W6d">
+                                        <rect key="frame" x="147.5" y="30" width="80" height="30"/>
+                                        <state key="normal" title="How to Use">
+                                            <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg3-RQ-xBG">
+                                        <rect key="frame" x="159" y="60" width="57" height="30"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJX-G9-JrN">
+                                        <rect key="frame" x="163.5" y="90" width="48" height="30"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.043137254899999998" green="0.1019607843" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rPl-FE-Qnl" firstAttribute="leading" secondItem="8Tg-on-VNT" secondAttribute="leading" id="JsV-zc-qsg"/>
+                            <constraint firstItem="rPl-FE-Qnl" firstAttribute="top" secondItem="8Tg-on-VNT" secondAttribute="bottom" constant="54" id="VmC-R4-Qdf"/>
+                            <constraint firstItem="rPl-FE-Qnl" firstAttribute="width" secondItem="1VQ-Lr-IDx" secondAttribute="width" id="X7T-SC-yQm"/>
+                            <constraint firstItem="8Tg-on-VNT" firstAttribute="leading" secondItem="VKe-8T-zL5" secondAttribute="leading" id="X9E-HJ-te2"/>
+                            <constraint firstItem="8Tg-on-VNT" firstAttribute="width" secondItem="1VQ-Lr-IDx" secondAttribute="width" id="XlS-IQ-adR"/>
+                            <constraint firstItem="8Tg-on-VNT" firstAttribute="top" secondItem="VKe-8T-zL5" secondAttribute="top" constant="59" id="uuO-ol-aFJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VKe-8T-zL5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="ov2-rX-3J8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyM-Wv-agi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="1469"/>
+            <point key="canvasLocation" x="2024.8" y="1468.5157421289357"/>
         </scene>
         <!--Item-->
         <scene sceneID="2lv-X4-cpK">
