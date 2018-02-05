@@ -67,7 +67,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yt-I7-YEJ">
                                         <rect key="frame" x="0.0" y="152" width="375" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="View History">
+                                        <state key="normal" title="Become a Student">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                         </state>
@@ -106,9 +106,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Peer Tutor" id="wLc-nh-Eyy">
                         <barButtonItem key="backBarButtonItem" title="    " id="P6Z-hx-VIA"/>
-                        <barButtonItem key="leftBarButtonItem" image="Home" style="done" id="UDG-m2-RS4">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="logoutButtonTapped" destination="Xod-sW-92m" id="OEW-AH-A8O"/>
@@ -317,7 +314,4 @@ We put a lot of thought into it, and we hope you love it.</string>
             <point key="canvasLocation" x="3305" y="559"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Home" width="50" height="50"/>
-    </resources>
 </document>
