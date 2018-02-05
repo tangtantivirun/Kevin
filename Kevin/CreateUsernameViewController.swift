@@ -30,11 +30,10 @@ class CreateUsernameViewController: ViewController {
                 return
             }
             ref.observeSingleEvent(of: .value, with: { (snapshot) in
-                let user = User(snapshot: snapshot)
+                let _ = User(snapshot: snapshot)
             })
         }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+        self.present(vc!, animated: true, completion: nil)
     }
 }

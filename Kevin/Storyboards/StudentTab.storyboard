@@ -13,7 +13,7 @@
         <!--Add-->
         <scene sceneID="dtC-qU-di3">
             <objects>
-                <viewController id="O3l-rO-SDk" sceneMemberID="viewController">
+                <viewController id="O3l-rO-SDk" customClass="AddRequestViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PeI-dP-Jao">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,12 +74,20 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="O3l-rO-SDk" eventType="touchUpInside" id="xYt-V7-hoI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3803921569" green="0.32137044269999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="cb6-gH-3LX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" selectedImage="AddButton" id="yLh-om-pgY"/>
+                    <connections>
+                        <outlet property="classTextField" destination="KBz-ym-ICW" id="L1u-sb-sny"/>
+                        <outlet property="locationTextField" destination="vGC-f1-Uai" id="qpx-iA-n1B"/>
+                        <outlet property="subjectTextField" destination="sF5-WX-l8H" id="cxB-Dp-fbh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWR-8G-WYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -298,31 +306,38 @@ If needed, admins have the ability to disable specific user accounts and bar acc
             </objects>
             <point key="canvasLocation" x="-1338" y="3037"/>
         </scene>
-        <!--Student Table View Controller-->
+        <!--History -->
         <scene sceneID="S2W-hA-eGJ">
             <objects>
-                <tableViewController id="44L-Jf-k3a" customClass="StudentTableViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Session" id="44L-Jf-k3a" customClass="StudentTableViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IHu-X7-pFj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="Md3-QZ-gnd" customClass="StudentTableViewCell" customModule="Kevin" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="70" id="Md3-QZ-gnd" customClass="StudentTableViewCell" customModule="Kevin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Md3-QZ-gnd" id="6IV-0a-8eB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUU-tN-v4D">
-                                            <rect key="frame" x="36" y="0.0" width="110" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa9-9v-ZdG">
+                                            <rect key="frame" x="36" y="0.0" width="59" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa9-9v-ZdG">
-                                            <rect key="frame" x="36" y="22" width="59" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C2-am-VYB">
+                                            <rect key="frame" x="36" y="22" width="46" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ct3-lC-2ZX">
+                                            <rect key="frame" x="36" y="46" width="66" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -331,7 +346,6 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="nameLabel" destination="sUU-tN-v4D" id="SeW-AF-Emb"/>
                                     <outlet property="subjectLabel" destination="Wa9-9v-ZdG" id="JCW-gB-zsD"/>
                                 </connections>
                             </tableViewCell>
@@ -341,7 +355,7 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                             <outlet property="delegate" destination="44L-Jf-k3a" id="HI2-tc-4mg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KSe-KQ-rE8">
+                    <navigationItem key="navigationItem" title="History " id="KSe-KQ-rE8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JZB-c3-TeB">
                             <connections>
                                 <action selector="addButtonDidTouch:" destination="44L-Jf-k3a" id="PMx-QH-LZv"/>
@@ -352,7 +366,7 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bab-Uz-bSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="2323"/>
+            <point key="canvasLocation" x="2112.8000000000002" y="2322.1889055472266"/>
         </scene>
         <!--Item-->
         <scene sceneID="E7D-rn-cjz">

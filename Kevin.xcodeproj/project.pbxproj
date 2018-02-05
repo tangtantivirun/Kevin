@@ -12,11 +12,13 @@
 		24216ED620159C2D00457CD2 /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED520159C2D00457CD2 /* Admin.storyboard */; };
 		24216ED820159C5C00457CD2 /* StudentTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED720159C5C00457CD2 /* StudentTab.storyboard */; };
 		24216EDA20159FC100457CD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED920159FC100457CD2 /* GoogleService-Info.plist */; };
+		24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C662027E2C6003DE875 /* AdminTableViewController.swift */; };
+		24284C692027E654003DE875 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C682027E654003DE875 /* UserService.swift */; };
+		24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */; };
 		243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */; };
 		243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */; };
 		246C4884201E1BFC00C1EAAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C4883201E1BFC00C1EAAB /* User.swift */; };
 		2473EB15201D0B7100CE838F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2473EB14201D0B7100CE838F /* Default-568h@2x.png */; };
-		2473EB1D201D8AA200CE838F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB1C201D8AA200CE838F /* Session.swift */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
 		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
@@ -34,11 +36,13 @@
 		24216ED520159C2D00457CD2 /* Admin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
 		24216ED720159C5C00457CD2 /* StudentTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentTab.storyboard; sourceTree = "<group>"; };
 		24216ED920159FC100457CD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Kevin/Service/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		24284C662027E2C6003DE875 /* AdminTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTableViewController.swift; sourceTree = "<group>"; };
+		24284C682027E654003DE875 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequestViewController.swift; sourceTree = "<group>"; };
 		243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		243AED932001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoggedInViewController.storyboard; sourceTree = "<group>"; };
 		246C4883201E1BFC00C1EAAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2473EB14201D0B7100CE838F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2473EB1C201D8AA200CE838F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		2473EB11201D09B600CE838F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				24284C682027E654003DE875 /* UserService.swift */,
+				246C4883201E1BFC00C1EAAB /* User.swift */,
 				24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */,
 				24216ED920159FC100457CD2 /* GoogleService-Info.plist */,
 				24216ECB2014189900457CD2 /* GradientView.swift */,
@@ -115,13 +121,13 @@
 				243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */,
 				24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */,
 				24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */,
+				24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */,
 				24D12BD12002B35200491EC6 /* SignUpVC.swift */,
 				24D12BD52003110D00491EC6 /* HomeVC.swift */,
-				2473EB1C201D8AA200CE838F /* Session.swift */,
 				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
-				2473EB11201D09B600CE838F /* Service */,
+				24284C662027E2C6003DE875 /* AdminTableViewController.swift */,
 				2473EB10201D098500CE838F /* Storyboards */,
-				246C4883201E1BFC00C1EAAB /* User.swift */,
+				2473EB11201D09B600CE838F /* Service */,
 			);
 			path = Kevin;
 			sourceTree = "<group>";
@@ -284,12 +290,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				246C4884201E1BFC00C1EAAB /* User.swift in Sources */,
-				2473EB1D201D8AA200CE838F /* Session.swift in Sources */,
+				24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */,
 				243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */,
 				24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */,
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,
+				24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */,
 				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				24216ECC2014189900457CD2 /* GradientView.swift in Sources */,
+				24284C692027E654003DE875 /* UserService.swift in Sources */,
 				24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */,
 				24EE44472025042A00DA0627 /* CreateUsernameViewController.swift in Sources */,
 				24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */,
