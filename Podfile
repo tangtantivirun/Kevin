@@ -6,7 +6,7 @@ target 'Kevin' do
   use_frameworks!
 
   # Pods for Kevin
-	pod ’Firebase/Core'
-	pod ‘Firebase/Auth’
-	pod ‘Firebase/Database’
+	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
+	pod 'FirebaseDatabase'
 end
