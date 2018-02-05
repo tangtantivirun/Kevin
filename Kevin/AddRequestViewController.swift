@@ -19,9 +19,21 @@ class AddRequestViewController: UIViewController {
     @IBAction func submitButtonTapped(_ sender: Any) {
         guard let firUser = Auth.auth().currentUser,
             let subject = subjectTextField.text,
-            !subject.isEmpty else {return}
-        
-        let request = ["subject": subject]
+            let classes = classTextField.text,
+            let location = locationTextField.text
+
+     else {
+    let error = ""
+    //Tells the user that there is an error and then gets firebase to tell them the error
+        let alertController = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+    
+    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+    alertController.addAction(defaultAction)
+    
+    self.present(alertController, animated: true, completion: nil)
+        return
+        }
+            let request = ["subject": subject, "classes": classes, "location": location]
         let ref = Database.database().reference().child("request").child(firUser.uid)
 
         ref.setValue(request) { (error, ref) in

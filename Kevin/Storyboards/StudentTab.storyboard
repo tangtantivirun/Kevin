@@ -230,7 +230,7 @@ We put a lot of thought into it, and we hope you love it.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RZ-xu-pOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-631" y="3712"/>
+            <point key="canvasLocation" x="-578" y="3766"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nUK-bg-y9e">

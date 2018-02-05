@@ -15,10 +15,8 @@
 		24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C662027E2C6003DE875 /* AdminTableViewController.swift */; };
 		24284C692027E654003DE875 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C682027E654003DE875 /* UserService.swift */; };
 		24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */; };
-		243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */; };
-		243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */; };
+		24284C742028B490003DE875 /* PeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C732028B490003DE875 /* PeerTutorViewController.swift */; };
 		246C4884201E1BFC00C1EAAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C4883201E1BFC00C1EAAB /* User.swift */; };
-		2473EB15201D0B7100CE838F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2473EB14201D0B7100CE838F /* Default-568h@2x.png */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
 		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
@@ -39,10 +37,8 @@
 		24284C662027E2C6003DE875 /* AdminTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTableViewController.swift; sourceTree = "<group>"; };
 		24284C682027E654003DE875 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequestViewController.swift; sourceTree = "<group>"; };
-		243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
-		243AED932001DCFF007DF4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoggedInViewController.storyboard; sourceTree = "<group>"; };
+		24284C732028B490003DE875 /* PeerTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorViewController.swift; sourceTree = "<group>"; };
 		246C4883201E1BFC00C1EAAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		2473EB14201D0B7100CE838F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -76,7 +72,6 @@
 				24216ED520159C2D00457CD2 /* Admin.storyboard */,
 				24216ED12015993900457CD2 /* PeerTutorTab.storyboard */,
 				24216ED720159C5C00457CD2 /* StudentTab.storyboard */,
-				243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */,
 				24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -97,7 +92,6 @@
 		24D5CA8E1FD5D19B00B1EDD7 = {
 			isa = PBXGroup;
 			children = (
-				2473EB14201D0B7100CE838F /* Default-568h@2x.png */,
 				24D5CA991FD5D19C00B1EDD7 /* Kevin */,
 				24D5CA981FD5D19C00B1EDD7 /* Products */,
 				78F04AC350959B680B322676 /* Pods */,
@@ -118,10 +112,10 @@
 			children = (
 				24D5CA9A1FD5D19C00B1EDD7 /* AppDelegate.swift */,
 				24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */,
-				243AED882001C0D2007DF4C6 /* LoggedInViewController.swift */,
 				24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */,
 				24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */,
 				24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */,
+				24284C732028B490003DE875 /* PeerTutorViewController.swift */,
 				24D12BD12002B35200491EC6 /* SignUpVC.swift */,
 				24D12BD52003110D00491EC6 /* HomeVC.swift */,
 				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
@@ -215,8 +209,6 @@
 				24216EDA20159FC100457CD2 /* GoogleService-Info.plist in Resources */,
 				24216ED820159C5C00457CD2 /* StudentTab.storyboard in Resources */,
 				24216ED22015993900457CD2 /* PeerTutorTab.storyboard in Resources */,
-				243AED972001DCFF007DF4C6 /* LoggedInViewController.storyboard in Resources */,
-				2473EB15201D0B7100CE838F /* Default-568h@2x.png in Resources */,
 				24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */,
 				24D5CAA01FD5D19C00B1EDD7 /* Main.storyboard in Resources */,
 			);
@@ -291,9 +283,9 @@
 			files = (
 				246C4884201E1BFC00C1EAAB /* User.swift in Sources */,
 				24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */,
-				243AED892001C0D2007DF4C6 /* LoggedInViewController.swift in Sources */,
 				24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */,
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,
+				24284C742028B490003DE875 /* PeerTutorViewController.swift in Sources */,
 				24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */,
 				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				24216ECC2014189900457CD2 /* GradientView.swift in Sources */,
@@ -307,14 +299,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		243AED922001DCFF007DF4C6 /* LoggedInViewController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				243AED932001DCFF007DF4C6 /* Base */,
-			);
-			name = LoggedInViewController.storyboard;
-			sourceTree = "<group>";
-		};
 		24D5CA9E1FD5D19C00B1EDD7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
