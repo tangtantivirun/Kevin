@@ -26,7 +26,7 @@ init?(snapshot: DataSnapshot) {
         self.uid = snapshot.key
         self.username = username
     }
-//    userRef.observeSingleEvent(of: .value, with: { (snapshot) in
+//   userRef.observeSingleEvent(of: .value, with: { (snapshot) in
 //    if let user = User(snapshot: snapshot) {
 //        print("Welcome back, \(user.username).")
 //    } else {

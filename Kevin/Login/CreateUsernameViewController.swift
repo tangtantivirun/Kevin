@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import FirebaseAuth
-import FirebaseDatabase
+import FirebaseDatabase.FIRDataSnapshot
 
 class CreateUsernameViewController: ViewController {
     
@@ -36,7 +36,7 @@ class CreateUsernameViewController: ViewController {
                 return
             }
             ref.observeSingleEvent(of: .value, with: { (snapshot) in
-                let _ = User(snapshot: snapshot)
+                _ = User(snapshot: snapshot)
             })
         }
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
