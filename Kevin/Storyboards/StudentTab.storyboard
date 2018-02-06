@@ -87,16 +87,17 @@
                         <color key="backgroundColor" red="0.3411764706" green="0.45098039220000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cb6-gH-3LX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" selectedImage="AddButton" id="yLh-om-pgY"/>
+                    <tabBarItem key="tabBarItem" title="Add" image="add" id="yLh-om-pgY"/>
                     <connections>
                         <outlet property="classTextField" destination="KBz-ym-ICW" id="L1u-sb-sny"/>
                         <outlet property="locationTextField" destination="vGC-f1-Uai" id="qpx-iA-n1B"/>
                         <outlet property="subjectTextField" destination="sF5-WX-l8H" id="cxB-Dp-fbh"/>
+                        <outlet property="submitButton" destination="39v-fi-OMR" id="yMQ-ER-2Qu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWR-8G-WYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2988" y="2322.1889055472266"/>
+            <point key="canvasLocation" x="570" y="1632"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="u5M-Tb-Yxa">
@@ -111,6 +112,7 @@
                     <connections>
                         <segue destination="BHX-NW-GIF" kind="relationship" relationship="viewControllers" id="6Ml-5s-F8R"/>
                         <segue destination="OZ2-Y9-u3N" kind="relationship" relationship="viewControllers" id="BIL-Xx-DqF"/>
+                        <segue destination="O3l-rO-SDk" kind="relationship" relationship="viewControllers" id="Hox-o9-KJd"/>
                         <segue destination="l3o-9E-QNz" kind="relationship" relationship="viewControllers" id="Dcd-dW-EhN"/>
                     </connections>
                 </tabBarController>
@@ -118,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="553.60000000000002" y="2323.5382308845578"/>
         </scene>
-        <!--Info-->
+        <!--PeerTutorConnect-->
         <scene sceneID="UPA-ia-grc">
             <objects>
                 <viewController id="vjq-WK-3Nj" customClass="StudentViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
@@ -185,8 +187,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7SR-6U-7V9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" image="MoreInfo" id="Jft-ff-N6X"/>
-                    <navigationItem key="navigationItem" id="rfZ-EX-Ium">
+                    <navigationItem key="navigationItem" title="PeerTutorConnect" id="rfZ-EX-Ium">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="KdN-1j-f0b"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -285,17 +286,17 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="iza-Jl-uKB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" selectedImage="Map" id="Fpk-4g-HDC"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="find" id="Fpk-4g-HDC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0Y-kb-5Kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1572" y="3049.9250374812596"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="HyN-Fl-EPZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BHX-NW-GIF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="MoreInfo" id="yot-Kf-meY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="yot-Kf-meY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="asA-RC-SQW">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -359,24 +360,19 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                             <outlet property="delegate" destination="44L-Jf-k3a" id="HI2-tc-4mg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="History " id="KSe-KQ-rE8">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JZB-c3-TeB">
-                            <connections>
-                                <action selector="addButtonDidTouch:" destination="44L-Jf-k3a" id="PMx-QH-LZv"/>
-                                <segue destination="O3l-rO-SDk" kind="show" id="heT-it-21O"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="History " id="KSe-KQ-rE8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bab-Uz-bSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2112.8000000000002" y="2322.1889055472266"/>
         </scene>
-        <!--Item-->
+        <!--List-->
         <scene sceneID="E7D-rn-cjz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l3o-9E-QNz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wYh-bz-niQ"/>
+                    <tabBarItem key="tabBarItem" title="List" image="list" selectedImage="list" id="wYh-bz-niQ">
+                        <color key="badgeColor" red="0.3411764706" green="0.45098039220000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bUW-Fq-BPh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -429,8 +425,9 @@ If needed, admins have the ability to disable specific user accounts and bar acc
         </scene>
     </scenes>
     <resources>
-        <image name="AddButton" width="50" height="50"/>
-        <image name="Map" width="50" height="50"/>
-        <image name="MoreInfo" width="50" height="50"/>
+        <image name="add" width="32" height="32"/>
+        <image name="find" width="32" height="32"/>
+        <image name="home" width="32" height="32"/>
+        <image name="list" width="32" height="32"/>
     </resources>
 </document>

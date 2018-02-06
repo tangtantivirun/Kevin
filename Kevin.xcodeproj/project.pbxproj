@@ -18,6 +18,7 @@
 		246C4884201E1BFC00C1EAAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C4883201E1BFC00C1EAAB /* User.swift */; };
 		248F7EAE20292AE6002C6114 /* PeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */; };
 		248F7EB020292BE0002C6114 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EAF20292BE0002C6114 /* StudentViewController.swift */; };
+		248F7EB3202944C0002C6114 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EB2202944C0002C6114 /* AdminViewController.swift */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
 		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
@@ -41,6 +42,7 @@
 		246C4883201E1BFC00C1EAAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorViewController.swift; sourceTree = "<group>"; };
 		248F7EAF20292BE0002C6114 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		248F7EB2202944C0002C6114 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				248F7EB120292E2A002C6114 /* Login */,
 				2473EB10201D098500CE838F /* Storyboards */,
 				2473EB11201D09B600CE838F /* Service */,
+				248F7EB2202944C0002C6114 /* AdminViewController.swift */,
 			);
 			path = Kevin;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */,
 				24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */,
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,
+				248F7EB3202944C0002C6114 /* AdminViewController.swift in Sources */,
 				24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */,
 				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				24216ECC2014189900457CD2 /* GradientView.swift in Sources */,

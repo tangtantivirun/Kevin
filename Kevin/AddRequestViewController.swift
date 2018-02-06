@@ -16,6 +16,12 @@ class AddRequestViewController: UIViewController {
     @IBOutlet weak var classTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     
+    @IBOutlet weak var submitButton: UIButton!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        submitButton.layer.cornerRadius = 6
+    }
+    
     @IBAction func submitButtonTapped(_ sender: Any) {
         guard let firUser = Auth.auth().currentUser,
             let subject = subjectTextField.text,

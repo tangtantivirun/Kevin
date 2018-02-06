@@ -28,7 +28,7 @@
                     <connections>
                         <segue destination="PYH-SK-Jee" kind="relationship" relationship="viewControllers" id="Ehd-vk-yO7"/>
                         <segue destination="BkA-lA-Emh" kind="relationship" relationship="viewControllers" id="Yks-bC-Tx8"/>
-                        <segue destination="s9u-7z-ZUh" kind="relationship" relationship="viewControllers" id="pC1-ZL-TCr"/>
+                        <segue destination="G6k-Gg-KzW" kind="relationship" relationship="viewControllers" id="pC1-ZL-TCr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2C-Wo-jmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -115,22 +115,22 @@
             </objects>
             <point key="canvasLocation" x="1264" y="2838.9805097451276"/>
         </scene>
-        <!--Item-->
+        <!--PeerTutorConnect-->
         <scene sceneID="iAI-yn-laT">
             <objects>
-                <viewController id="s9u-7z-ZUh" sceneMemberID="viewController">
+                <viewController id="s9u-7z-ZUh" customClass="AdminViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1VQ-Lr-IDx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Admin! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tg-on-VNT">
-                                <rect key="frame" x="0.0" y="79" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="123" width="375" height="40"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="32"/>
                                 <color key="textColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rPl-FE-Qnl">
-                                <rect key="frame" x="0.0" y="173" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="217" width="375" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muI-ed-nlO">
                                         <rect key="frame" x="137.5" y="0.0" width="100" height="30"/>
@@ -170,11 +170,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VKe-8T-zL5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ov2-rX-3J8"/>
+                    <navigationItem key="navigationItem" title="PeerTutorConnect" id="u6U-NV-497">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="37X-Tc-Tu3"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyM-Wv-agi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024.8" y="1468.5157421289357"/>
+            <point key="canvasLocation" x="2724" y="1468"/>
         </scene>
         <!--Item-->
         <scene sceneID="2lv-X4-cpK">
@@ -194,6 +196,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fd8-yy-UEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2027.2" y="2158.9205397301353"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="raO-2j-NpT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G6k-Gg-KzW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ov2-rX-3J8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ILq-Zg-g7t">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s9u-7z-ZUh" kind="relationship" relationship="rootViewController" id="sWm-41-XgW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVn-nj-ugg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024" y="1468.0659670164919"/>
         </scene>
     </scenes>
 </document>
