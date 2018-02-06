@@ -11,8 +11,11 @@ import FirebaseAuth
 
 class ForgotPasswordVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var resetButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        resetButton.layer.cornerRadius = 6
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
     }

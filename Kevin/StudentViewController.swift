@@ -1,5 +1,5 @@
 //
-//  PeerTutorViewController.swift
+//  StudentViewController.swift
 //  Kevin
 //
 //  Created by Tang Tantivirun on 2/5/18.
@@ -7,14 +7,12 @@
 //
 
 import Foundation
-import FirebaseAuth
-import Firebase
 import UIKit
 
-class PeerTutorViewController: UIViewController {
+class StudentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-    navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
     }
     @objc func backAction(){
         //print("Back Button Clicked")

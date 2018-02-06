@@ -121,13 +121,13 @@
         <!--Info-->
         <scene sceneID="UPA-ia-grc">
             <objects>
-                <viewController id="vjq-WK-3Nj" sceneMemberID="viewController">
+                <viewController id="vjq-WK-3Nj" customClass="StudentViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="exM-Wy-GCq" colorLabel="IBBuiltInLabel-Red">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aAo-sd-i1H">
-                                <rect key="frame" x="0.0" y="221" width="375" height="177.5"/>
+                                <rect key="frame" x="0.0" y="221" width="375" height="139.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Code of Conduct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gS-8O-tD6">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="25.5"/>
@@ -165,14 +165,6 @@
                                             <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDF-Qv-vCh">
-                                        <rect key="frame" x="0.0" y="139.5" width="375" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Log Out">
-                                            <color key="titleColor" red="0.043137254899999998" green="0.1019607843" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Student! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r94-e3-lOK">
@@ -194,7 +186,9 @@
                         <viewLayoutGuide key="safeArea" id="7SR-6U-7V9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="MoreInfo" id="Jft-ff-N6X"/>
-                    <navigationItem key="navigationItem" id="rfZ-EX-Ium"/>
+                    <navigationItem key="navigationItem" id="rfZ-EX-Ium">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="KdN-1j-f0b"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fy-FV-Beq" userLabel="First Responder" sceneMemberID="firstResponder"/>

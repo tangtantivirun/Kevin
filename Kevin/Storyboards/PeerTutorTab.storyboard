@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Peer Tutor-->
+        <!--PeerTutorConnect-->
         <scene sceneID="MxB-Ja-4Jp">
             <objects>
-                <viewController id="UlE-pb-iK5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Hub" id="UlE-pb-iK5" customClass="PeerTutorViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghq-11-VZd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
@@ -80,18 +80,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xod-sW-92m">
-                                <rect key="frame" x="0.0" y="429" width="375" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Log Out">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="logoutButtonTapped:" destination="UlE-pb-iK5" eventType="touchUpInside" id="U07-I4-vXj"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764705882353" green="0.45098039215686275" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -104,12 +92,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qkO-qe-JDD"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Peer Tutor" id="wLc-nh-Eyy">
+                    <navigationItem key="navigationItem" title="PeerTutorConnect" id="wLc-nh-Eyy">
                         <barButtonItem key="backBarButtonItem" title="    " id="P6Z-hx-VIA"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Cuv-br-bAP"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="logoutButtonTapped" destination="Xod-sW-92m" id="OEW-AH-A8O"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVE-Ei-E9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

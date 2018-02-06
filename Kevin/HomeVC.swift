@@ -20,4 +20,16 @@ class HomeVC: UIViewController {
         emailLabel.text = currentUserEmail
         
     }
+    @IBAction func logoutAction(_ sender: Any) {
+        if Auth.auth().currentUser != nil {
+            do {
+                try Auth.auth().signOut()
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main")
+                self.present(vc!, animated: true, completion: nil)
+                
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
