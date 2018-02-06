@@ -17,10 +17,20 @@ class AddRequestViewController: UIViewController {
     @IBOutlet weak var classTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     
+    let location = ["Hargate", "Library", "Schoolhouse", "Lindsey"]
+    var selectedLocation: String?
+    
     @IBOutlet weak var submitButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        createLocationPicker()
         submitButton.layer.cornerRadius = 6
+    }
+    func createLocationPicker() {
+        let locationPicker = UIPickerView()
+        locationPicker.delegate = self
+        
+        locationTextField.inputView = locationPicker
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
@@ -55,4 +65,23 @@ class AddRequestViewController: UIViewController {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Session")
         self.present(vc!, animated: true, completion: nil)
     }
+}
+extension AddRequestViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return location.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return location[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedLocation = location[row]
+        locationTextField.text = selectedLocation
+    }
+    
 }
