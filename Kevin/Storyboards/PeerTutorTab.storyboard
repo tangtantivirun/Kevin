@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLs-hh-qUg">
-                                <rect key="frame" x="0.0" y="194" width="375" height="190"/>
+                                <rect key="frame" x="0.0" y="194" width="375" height="152"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wr-Tn-0LZ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
@@ -60,14 +60,6 @@
                                         <rect key="frame" x="0.0" y="114" width="375" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Settings">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yt-I7-YEJ">
-                                        <rect key="frame" x="0.0" y="152" width="375" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Become a Student">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                         </state>
