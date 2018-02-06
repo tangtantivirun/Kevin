@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -115,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="1264" y="2838.9805097451276"/>
         </scene>
-        <!--PeerTutorConnect-->
+        <!--Welcome Admin-->
         <scene sceneID="iAI-yn-laT">
             <objects>
                 <viewController id="s9u-7z-ZUh" customClass="AdminViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,15 +145,18 @@
                                             <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg3-RQ-xBG">
-                                        <rect key="frame" x="159" y="60" width="57" height="30"/>
-                                        <state key="normal" title="Settings">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJX-G9-JrN">
+                                        <rect key="frame" x="121.5" y="60" width="132" height="30"/>
+                                        <state key="normal" title="Register Peer Tutor">
                                             <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="TSS-CP-F4e" kind="show" id="aPB-LS-Hhs"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJX-G9-JrN">
-                                        <rect key="frame" x="163.5" y="90" width="48" height="30"/>
-                                        <state key="normal" title="Logout">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg3-RQ-xBG">
+                                        <rect key="frame" x="159" y="90" width="57" height="30"/>
+                                        <state key="normal" title="Settings">
                                             <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
@@ -170,13 +174,116 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VKe-8T-zL5"/>
                     </view>
-                    <navigationItem key="navigationItem" title="PeerTutorConnect" id="u6U-NV-497">
+                    <navigationItem key="navigationItem" title="Welcome Admin" id="u6U-NV-497">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="37X-Tc-Tu3"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyM-Wv-agi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2724" y="1468"/>
+        </scene>
+        <!--Add Peer Tutor View Controller-->
+        <scene sceneID="nAx-IR-S1k">
+            <objects>
+                <viewController id="TSS-CP-F4e" customClass="AddPeerTutorViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exg-c6-evs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ouw-J5-zx7">
+                                <rect key="frame" x="16" y="224" width="343" height="394"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" id="oRY-mb-mBf">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oRY-mb-mBf" id="GwP-lY-cRi">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMa-xj-Fid">
+                                                    <rect key="frame" x="14" y="0.0" width="164" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="164" id="kbc-x8-cTF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzo-Za-gFS">
+                                                    <rect key="frame" x="14" y="22" width="164" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bMa-xj-Fid" firstAttribute="trailing" secondItem="Gzo-Za-gFS" secondAttribute="trailing" id="6X7-eF-izH"/>
+                                                <constraint firstItem="Gzo-Za-gFS" firstAttribute="top" secondItem="bMa-xj-Fid" secondAttribute="bottom" constant="1" id="X52-co-xsP"/>
+                                                <constraint firstItem="bMa-xj-Fid" firstAttribute="top" secondItem="GwP-lY-cRi" secondAttribute="top" id="cBc-7l-UXj"/>
+                                                <constraint firstItem="bMa-xj-Fid" firstAttribute="leading" secondItem="GwP-lY-cRi" secondAttribute="leadingMargin" constant="-1" id="hPr-Xh-odd"/>
+                                                <constraint firstItem="bMa-xj-Fid" firstAttribute="leading" secondItem="Gzo-Za-gFS" secondAttribute="leading" id="mzo-mp-dzV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peer Tutor Added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWz-dQ-wle">
+                                <rect key="frame" x="16" y="195.5" width="134" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ssp-c2-K8L">
+                                <rect key="frame" x="87" y="79" width="200" height="110"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdJ-XO-eIx">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Peer Tutor " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-tb-154">
+                                        <rect key="frame" x="0.0" y="40" width="200" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qke-Fv-vmH">
+                                        <rect key="frame" x="0.0" y="80" width="200" height="30"/>
+                                        <state key="normal" title="Add Peer Tutor"/>
+                                        <connections>
+                                            <action selector="addPeerTutorTapped:" destination="TSS-CP-F4e" eventType="touchUpInside" id="6Y9-8v-IPf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="vAq-mp-Cj0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="top" secondItem="Ssp-c2-K8L" secondAttribute="bottom" constant="35" id="HFh-9a-Bdi"/>
+                            <constraint firstItem="Ssp-c2-K8L" firstAttribute="centerX" secondItem="Ouw-J5-zx7" secondAttribute="centerX" id="IFS-yc-ctf"/>
+                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="bottom" secondItem="73j-59-IbR" secondAttribute="bottom" id="LsR-Ef-a4J"/>
+                            <constraint firstItem="Ssp-c2-K8L" firstAttribute="centerX" secondItem="exg-c6-evs" secondAttribute="centerX" id="c2x-6B-4yD"/>
+                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="leading" secondItem="VWz-dQ-wle" secondAttribute="leading" id="gkc-8U-sAr"/>
+                            <constraint firstItem="Ssp-c2-K8L" firstAttribute="top" secondItem="73j-59-IbR" secondAttribute="top" constant="15" id="ohA-el-HcQ"/>
+                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="top" secondItem="VWz-dQ-wle" secondAttribute="bottom" constant="8" symbolic="YES" id="tUP-Y3-j8n"/>
+                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="leading" secondItem="exg-c6-evs" secondAttribute="leadingMargin" id="xbH-Jq-132"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="73j-59-IbR"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelMessage" destination="VWz-dQ-wle" id="ApD-5r-rRn"/>
+                        <outlet property="nameTextField" destination="wdJ-XO-eIx" id="rP0-r6-LCc"/>
+                        <outlet property="subjectTextField" destination="kWV-tb-154" id="Umj-4Y-EFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hha-Hq-uhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3400.8000000000002" y="1467.616191904048"/>
         </scene>
         <!--Item-->
         <scene sceneID="2lv-X4-cpK">
