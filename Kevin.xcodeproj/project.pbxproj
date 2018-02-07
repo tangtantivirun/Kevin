@@ -15,6 +15,7 @@
 		24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C662027E2C6003DE875 /* AdminTableViewController.swift */; };
 		24284C692027E654003DE875 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C682027E654003DE875 /* UserService.swift */; };
 		24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */; };
+		242DEB0E202A78A300B42B55 /* TutorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DEB0D202A78A300B42B55 /* TutorModel.swift */; };
 		246C4884201E1BFC00C1EAAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C4883201E1BFC00C1EAAB /* User.swift */; };
 		248F7EAE20292AE6002C6114 /* PeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */; };
 		248F7EB020292BE0002C6114 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EAF20292BE0002C6114 /* StudentViewController.swift */; };
@@ -41,6 +42,7 @@
 		24284C662027E2C6003DE875 /* AdminTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTableViewController.swift; sourceTree = "<group>"; };
 		24284C682027E654003DE875 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequestViewController.swift; sourceTree = "<group>"; };
+		242DEB0D202A78A300B42B55 /* TutorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorModel.swift; sourceTree = "<group>"; };
 		246C4883201E1BFC00C1EAAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorViewController.swift; sourceTree = "<group>"; };
 		248F7EAF20292BE0002C6114 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				2473EB10201D098500CE838F /* Storyboards */,
 				2473EB11201D09B600CE838F /* Service */,
 				248F7EB2202944C0002C6114 /* AdminViewController.swift */,
+				242DEB0D202A78A300B42B55 /* TutorModel.swift */,
 			);
 			path = Kevin;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				24E43AB02029609C00FBF232 /* AddPeerTutorTableViewCell.swift in Sources */,
 				246C4884201E1BFC00C1EAAB /* User.swift in Sources */,
+				242DEB0E202A78A300B42B55 /* TutorModel.swift in Sources */,
 				24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */,
 				24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */,
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,

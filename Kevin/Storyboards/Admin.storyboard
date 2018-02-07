@@ -194,7 +194,7 @@
                                 <rect key="frame" x="16" y="224" width="343" height="394"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" id="oRY-mb-mBf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oRY-mb-mBf" customClass="AddPeerTutorTableViewCell" customModule="Kevin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oRY-mb-mBf" id="GwP-lY-cRi">
@@ -225,8 +225,16 @@
                                                 <constraint firstItem="bMa-xj-Fid" firstAttribute="leading" secondItem="Gzo-Za-gFS" secondAttribute="leading" id="mzo-mp-dzV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="bMa-xj-Fid" id="7Da-Jw-OWt"/>
+                                            <outlet property="subjectLabel" destination="Gzo-Za-gFS" id="NZ6-jS-9tB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="TSS-CP-F4e" id="eZc-9I-Eb8"/>
+                                    <outlet property="delegate" destination="TSS-CP-F4e" id="cFi-9s-JRZ"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peer Tutor Added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWz-dQ-wle">
                                 <rect key="frame" x="16" y="195.5" width="134" height="20.5"/>
@@ -279,6 +287,7 @@
                         <outlet property="labelMessage" destination="VWz-dQ-wle" id="ApD-5r-rRn"/>
                         <outlet property="nameTextField" destination="wdJ-XO-eIx" id="rP0-r6-LCc"/>
                         <outlet property="subjectTextField" destination="kWV-tb-154" id="Umj-4Y-EFB"/>
+                        <outlet property="tableViewTutors" destination="Ouw-J5-zx7" id="L1q-qF-eXW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hha-Hq-uhh" userLabel="First Responder" sceneMemberID="firstResponder"/>

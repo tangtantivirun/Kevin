@@ -113,5 +113,98 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kevin/AddPeerTutorViewController.swift"
+            timestampString = "539656015.444947"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AddPeerTutorViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kevin.AddPeerTutorViewController.__deallocating_deinit"
+                  moduleName = "Kevin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/Kevin/Kevin/AddPeerTutorViewController.swift"
+                  timestampString = "539655056.719784"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kevin.AddPeerTutorViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kevin.AddPeerTutorViewController"
+                  moduleName = "Kevin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/Kevin/Kevin/AddPeerTutorViewController.swift"
+                  timestampString = "539655056.7220891"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kevin.AddPeerTutorViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kevin.AddPeerTutorViewController"
+                  moduleName = "Kevin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/Kevin/Kevin/AddPeerTutorViewController.swift"
+                  timestampString = "539655056.723882"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "75">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kevin.AddPeerTutorViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kevin.AddPeerTutorViewController&gt;"
+                  moduleName = "Kevin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/Kevin/Kevin/AddPeerTutorViewController.swift"
+                  timestampString = "539655056.725494"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kevin.AddPeerTutorViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kevin.AddPeerTutorViewController&gt;"
+                  moduleName = "Kevin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/Kevin/Kevin/AddPeerTutorViewController.swift"
+                  timestampString = "539655056.728079"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

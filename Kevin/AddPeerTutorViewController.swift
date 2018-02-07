@@ -11,29 +11,67 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class AddPeerTutorViewController: UIViewController {
+class AddPeerTutorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var refTutors: DatabaseReference!
+    let firUser = Auth.auth().currentUser
 
     @IBOutlet weak var nameTextField: UITextField!
-    
     @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var labelMessage: UILabel!
+    
+    @IBOutlet weak var tableViewTutors: UITableView!
+    
+    var tutorList = [TutorModel]()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tutorList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AddPeerTutorTableViewCell
+        let tutor: TutorModel
+        
+        tutor = tutorList[indexPath.row]
+        
+        cell.nameLabel.text = tutor.name
+        cell.subjectLabel.text = tutor.subject
+        
+        return cell
+    }
+    
     @IBAction func addPeerTutorTapped(_ sender: Any) {
         addTutors()
     }
-    var refTutors: DatabaseReference!
-    let firUser = Auth.auth().currentUser
+
     override func viewDidLoad() {
         super.viewDidLoad()
         refTutors = Database.database().reference().child("PeerTutors").child(firUser!.uid)
+        refTutors.observe(DataEventType.value, with: { (snapshot) in
+            if snapshot.childrenCount > 0 {
+                self.tutorList.removeAll()
+                
+                for tutor in snapshot.children.allObjects as! [DataSnapshot] {
+                    let tutorObject = tutor.value as? [String:AnyObject]
+                    let tutorName = tutorObject?["tutorName"]
+                    let tutorSubject = tutorObject?["tutorSubject"]
+                    
+                    let tutor = TutorModel(name: tutorName as! String?, subject: tutorSubject as! String?)
+                    
+                    self.tutorList.append(tutor)
+                }
+                self.tableViewTutors.reloadData()
+            }
+        })
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     func addTutors(){
+        let key = refTutors.childByAutoId().key
         let tutor = ["tutorName": nameTextField.text! as String,
                      "tutorSubject": subjectTextField.text! as String
                     ] as [String : Any]
-        refTutors.child(firUser!.uid).setValue(tutor)
+        refTutors.child(key).setValue(tutor)
         labelMessage.text = "Peer Tutor Added"
     }
 }
