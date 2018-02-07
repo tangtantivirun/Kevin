@@ -51,7 +51,7 @@ class AddRequestViewController: UIViewController {
         return
         }
             let request = ["subject": subject, "classes": classes, "location": location]
-        let ref = Database.database().reference().child("request").child(firUser.uid)
+        let ref = Database.database().reference().child("request").child(firUser.uid).childByAutoId()
 
         ref.setValue(request) { (error, ref) in
             if let error = error {
@@ -62,7 +62,7 @@ class AddRequestViewController: UIViewController {
                 _ = User(snapshot: snapshot)
             })
         }
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Session")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "StudentHome")
         self.present(vc!, animated: true, completion: nil)
     }
 }
