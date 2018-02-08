@@ -171,7 +171,7 @@ If at any point you want to seek help for yourself, you’re able and encouraged
             </objects>
             <point key="canvasLocation" x="3985" y="1254"/>
         </scene>
-        <!--About the App-->
+        <!--About PeerTutorConnect-->
         <scene sceneID="Abh-DF-yyn">
             <objects>
                 <viewController id="Qm3-NE-qRB" sceneMemberID="viewController">
@@ -192,13 +192,13 @@ If at any point you want to seek help for yourself, you’re able and encouraged
                                 <rect key="frame" x="16" y="83" width="343" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Xxxxx was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
+                                <mutableString key="text">PeerTutorConnect was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
 
 One of our favorite things about our fully residential community is our ability as students to meet with each other at nearly any time of the day. Student friendships and collaboration is at the center of the community, both academically and in campus culture as a whole. We thought of this app as an opportunity to make it easier for students to get help in their subjects, on the surface, but also to increase student collaboration as a whole.
 
 We’re hoping the app will continue to evolve, eventually including in-app messaging, among other things. Be sure to let either of us know if you have any ideas!
 
-We put a lot of thought into it, and we hope you love it.</string>
+We put a lot of thought into it, and we hope you love it.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -206,7 +206,7 @@ We put a lot of thought into it, and we hope you love it.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sJP-UN-H8H"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About the App" id="4Iq-C5-WJS"/>
+                    <navigationItem key="navigationItem" title="About PeerTutorConnect" id="4Iq-C5-WJS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjQ-EK-bu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
