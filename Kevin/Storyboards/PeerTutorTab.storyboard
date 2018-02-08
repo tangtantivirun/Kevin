@@ -11,8 +11,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="BradleyHand-Bold.ttf">
-            <string>BradleyHandITCTT-Bold</string>
+        <array key="EuphemiaCAS.ttc">
+            <string>EuphemiaUCAS-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -25,17 +25,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLs-hh-qUg">
-                                <rect key="frame" x="0.0" y="194" width="375" height="152"/>
+                                <rect key="frame" x="0.0" y="194" width="375" height="114"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wr-Tn-0LZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Peer Tutor Code of Conduct">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xg-U3-3G7">
-                                        <rect key="frame" x="0.0" y="38" width="375" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="About the App">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +39,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-ry-akg">
-                                        <rect key="frame" x="0.0" y="76" width="375" height="38"/>
+                                        <rect key="frame" x="0.0" y="38" width="375" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="How to Use">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,7 +50,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De5-4Y-mFa">
-                                        <rect key="frame" x="0.0" y="114" width="375" height="38"/>
+                                        <rect key="frame" x="0.0" y="76" width="375" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,9 +62,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Peer Tutor! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBK-No-9WI">
-                                <rect key="frame" x="45" y="115" width="285" height="40"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Peer Tutor! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBK-No-9WI">
+                                <rect key="frame" x="45" y="122" width="285" height="33"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -192,13 +185,13 @@ If at any point you want to seek help for yourself, you’re able and encouraged
                                 <rect key="frame" x="16" y="83" width="343" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">PeerTutorConnect was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
+                                <string key="text">PeerTutorConnect was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
 
 One of our favorite things about our fully residential community is our ability as students to meet with each other at nearly any time of the day. Student friendships and collaboration is at the center of the community, both academically and in campus culture as a whole. We thought of this app as an opportunity to make it easier for students to get help in their subjects, on the surface, but also to increase student collaboration as a whole.
 
 We’re hoping the app will continue to evolve, eventually including in-app messaging, among other things. Be sure to let either of us know if you have any ideas!
 
-We put a lot of thought into it, and we hope you love it.</mutableString>
+We put a lot of thought into it, and we hope you love it.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
