@@ -340,6 +340,7 @@
 /* Begin XCBuildConfiguration section */
 		24D5CAA71FD5D19C00B1EDD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284E604B31FA1165D25C509A /* Pods-Kevin.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -397,6 +398,7 @@
 		};
 		24D5CAA81FD5D19C00B1EDD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B8520AB50839189DB0FB70 /* Pods-Kevin.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
