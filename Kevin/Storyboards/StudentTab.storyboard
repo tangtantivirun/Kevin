@@ -126,7 +126,7 @@
         <!--PeerTutorConnect-->
         <scene sceneID="UPA-ia-grc">
             <objects>
-                <viewController storyboardIdentifier="StudentHome" id="vjq-WK-3Nj" customClass="StudentViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vjq-WK-3Nj" customClass="StudentViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="exM-Wy-GCq" colorLabel="IBBuiltInLabel-Red">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,7 +298,7 @@ If needed, admins have the ability to disable specific user accounts and bar acc
         <!--Home-->
         <scene sceneID="HyN-Fl-EPZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BHX-NW-GIF" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StudentHome" automaticallyAdjustsScrollViewInsets="NO" id="BHX-NW-GIF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="yot-Kf-meY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="asA-RC-SQW">
