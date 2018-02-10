@@ -205,7 +205,7 @@ We put a lot of thought into it, and we hope you love it.</string>
             </objects>
             <point key="canvasLocation" x="3985" y="558"/>
         </scene>
-        <!--Item-->
+        <!--Requests-->
         <scene sceneID="bkF-SK-ulg">
             <objects>
                 <tableViewController id="tLP-tE-JeF" sceneMemberID="viewController">
@@ -228,13 +228,13 @@ We put a lot of thought into it, and we hope you love it.</string>
                             <outlet property="delegate" destination="tLP-tE-JeF" id="wEH-Dm-fkT"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="EW0-S8-3Nf"/>
+                    <tabBarItem key="tabBarItem" title="Requests" image="list" id="EW0-S8-3Nf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qw-3X-B6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1118" y="2523"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="Vgx-Ac-72R">
             <objects>
                 <viewController id="gRr-3g-aIp" customClass="PeerTutorMapViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
@@ -255,7 +255,7 @@ We put a lot of thought into it, and we hope you love it.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cbi-J1-oYm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="677-Lj-EcZ"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="find" id="677-Lj-EcZ"/>
                     <connections>
                         <outlet property="mapView" destination="JTI-Nx-JZK" id="WOu-YL-azT"/>
                     </connections>
@@ -284,11 +284,11 @@ We put a lot of thought into it, and we hope you love it.</string>
             </objects>
             <point key="canvasLocation" x="1119" y="1815"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="UHU-Hl-zYT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FeB-Ur-FF3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tCB-u3-twu"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="tCB-u3-twu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3D-GH-hH3">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -340,4 +340,9 @@ We put a lot of thought into it, and we hope you love it.</string>
             <point key="canvasLocation" x="3305" y="559"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Home" width="32" height="32"/>
+        <image name="find" width="32" height="32"/>
+        <image name="list" width="32" height="32"/>
+    </resources>
 </document>
