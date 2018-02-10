@@ -15,9 +15,9 @@ class PeerTutorMapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let centerLocation = CLLocation(latitude: 43.1948, longitude: 71.5734)
+        let centerLocation = CLLocation(latitude: 43.1948, longitude: -71.5734)
         
-        let regionSpan: CLLocationDistance = 1000
+        let regionSpan: CLLocationDistance = 500
         func centerMapOnLocation(location: CLLocation) {
             let selectedRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionSpan, regionSpan)
             mapView.setRegion(selectedRegion, animated: true)
