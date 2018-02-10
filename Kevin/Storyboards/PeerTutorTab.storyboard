@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qRF-EL-I4M">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,8 +11,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="BradleyHand-Bold.ttf">
-            <string>BradleyHandITCTT-Bold</string>
+        <array key="EuphemiaCAS.ttc">
+            <string>EuphemiaUCAS-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -21,21 +21,14 @@
             <objects>
                 <viewController storyboardIdentifier="Hub" id="UlE-pb-iK5" customClass="PeerTutorViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghq-11-VZd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLs-hh-qUg">
-                                <rect key="frame" x="0.0" y="194" width="375" height="152"/>
+                                <rect key="frame" x="0.0" y="194" width="320" height="114"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wr-Tn-0LZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Peer Tutor Code of Conduct">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xg-U3-3G7">
-                                        <rect key="frame" x="0.0" y="38" width="375" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="About the App">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +39,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-ry-akg">
-                                        <rect key="frame" x="0.0" y="76" width="375" height="38"/>
+                                        <rect key="frame" x="0.0" y="38" width="320" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="How to Use">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,7 +50,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De5-4Y-mFa">
-                                        <rect key="frame" x="0.0" y="114" width="375" height="38"/>
+                                        <rect key="frame" x="0.0" y="76" width="320" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,9 +62,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Peer Tutor! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBK-No-9WI">
-                                <rect key="frame" x="45" y="115" width="285" height="40"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Peer Tutor! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBK-No-9WI">
+                                <rect key="frame" x="45" y="122" width="230" height="33"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -101,7 +94,7 @@
             <objects>
                 <viewController id="q8Z-HD-9eI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YXh-tt-p2C">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwv-Ou-VCx">
@@ -139,11 +132,11 @@
             <objects>
                 <viewController id="nqT-Wv-CAK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="szv-dc-oRJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sMn-hT-RfL">
-                                <rect key="frame" x="16" y="49" width="343" height="569"/>
+                                <rect key="frame" x="16" y="49" width="288" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">When logged in as a tutor, you will be notified of requests for tutor assistance submitted by students, which will include information such as the student name, subject, description, and most crucially location. You will be able to accept or ignore these requests using the checkboxes located on the request box, which if accepted removes it from the list of requests and notifies the student. Then, you go to that student’s location and help them. You will also be able to see history of students helped by peer tutors, at the bottom of the same far-left tab by which you came to this page.
 
@@ -176,7 +169,7 @@ If at any point you want to seek help for yourself, you’re able and encouraged
             <objects>
                 <viewController id="Qm3-NE-qRB" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="rlP-1Q-nHe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-yb-dwG">
@@ -192,13 +185,13 @@ If at any point you want to seek help for yourself, you’re able and encouraged
                                 <rect key="frame" x="16" y="83" width="343" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">PeerTutorConnect was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
+                                <string key="text">PeerTutorConnect was the Winter ISP of Tang Tantivirun ‘18 and Victoria Knight ‘18. We wanted to learn more about programming and Swift and to do so in a way that could hopefully benefit the SPS community. 
 
 One of our favorite things about our fully residential community is our ability as students to meet with each other at nearly any time of the day. Student friendships and collaboration is at the center of the community, both academically and in campus culture as a whole. We thought of this app as an opportunity to make it easier for students to get help in their subjects, on the surface, but also to increase student collaboration as a whole.
 
 We’re hoping the app will continue to evolve, eventually including in-app messaging, among other things. Be sure to let either of us know if you have any ideas!
 
-We put a lot of thought into it, and we hope you love it.</mutableString>
+We put a lot of thought into it, and we hope you love it.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -212,20 +205,20 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
             </objects>
             <point key="canvasLocation" x="3985" y="558"/>
         </scene>
-        <!--Item-->
+        <!--Requests-->
         <scene sceneID="bkF-SK-ulg">
             <objects>
                 <tableViewController id="tLP-tE-JeF" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TPq-AT-MMd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="IYG-pR-Wt3">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IYG-pR-Wt3" id="vAR-JH-QL6">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -235,27 +228,41 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
                             <outlet property="delegate" destination="tLP-tE-JeF" id="wEH-Dm-fkT"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="EW0-S8-3Nf"/>
+                    <tabBarItem key="tabBarItem" title="Requests" image="list" id="EW0-S8-3Nf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qw-3X-B6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1118" y="2523"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="Vgx-Ac-72R">
             <objects>
-                <viewController id="gRr-3g-aIp" sceneMemberID="viewController">
+                <viewController id="gRr-3g-aIp" customClass="PeerTutorMapViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4bo-K5-1RL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JTI-Nx-JZK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JTI-Nx-JZK" firstAttribute="top" secondItem="4bo-K5-1RL" secondAttribute="top" id="Tn5-Gw-gCl"/>
+                            <constraint firstItem="JTI-Nx-JZK" firstAttribute="leading" secondItem="Cbi-J1-oYm" secondAttribute="leading" id="gl0-v1-GK1"/>
+                            <constraint firstItem="JTI-Nx-JZK" firstAttribute="trailing" secondItem="Cbi-J1-oYm" secondAttribute="trailing" id="qD0-cA-hur"/>
+                            <constraint firstItem="JTI-Nx-JZK" firstAttribute="bottom" secondItem="Cbi-J1-oYm" secondAttribute="bottom" id="zw9-vX-B8z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Cbi-J1-oYm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="677-Lj-EcZ"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="find" id="677-Lj-EcZ"/>
+                    <connections>
+                        <outlet property="mapView" destination="JTI-Nx-JZK" id="WOu-YL-azT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4W1-8d-A3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1878" y="2069"/>
+            <point key="canvasLocation" x="1877.5999999999999" y="2067.6161919040483"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OoE-wL-eIm">
@@ -277,14 +284,14 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
             </objects>
             <point key="canvasLocation" x="1119" y="1815"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="UHU-Hl-zYT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FeB-Ur-FF3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tCB-u3-twu"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="tCB-u3-twu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3D-GH-hH3">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -302,7 +309,7 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="odm-59-GNL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KFM-bf-ySE">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -320,7 +327,7 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ak-8T-BkD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bvG-Cs-JtF">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -333,4 +340,9 @@ We put a lot of thought into it, and we hope you love it.</mutableString>
             <point key="canvasLocation" x="3305" y="559"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Home" width="32" height="32"/>
+        <image name="find" width="32" height="32"/>
+        <image name="list" width="32" height="32"/>
+    </resources>
 </document>

@@ -30,6 +30,7 @@
 		24E43AB02029609C00FBF232 /* AddPeerTutorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E43AAE2029609C00FBF232 /* AddPeerTutorTableViewCell.swift */; };
 		24E43AB12029609C00FBF232 /* AddPeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E43AAF2029609C00FBF232 /* AddPeerTutorViewController.swift */; };
 		24EE44472025042A00DA0627 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */; };
+		8B1A9B38202DE661005E2E05 /* PeerTutorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */; };
 		99590790FE8527CD41999B44 /* Pods_Kevin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		284E604B31FA1165D25C509A /* Pods-Kevin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.debug.xcconfig"; sourceTree = "<group>"; };
 		53B8520AB50839189DB0FB70 /* Pods-Kevin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.release.xcconfig"; sourceTree = "<group>"; };
+		8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorMapViewController.swift; sourceTree = "<group>"; };
 		F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kevin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				24284C662027E2C6003DE875 /* AdminTableViewController.swift */,
 				248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */,
 				248F7EAF20292BE0002C6114 /* StudentViewController.swift */,
+				8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */,
 				24D5CAA61FD5D19C00B1EDD7 /* Info.plist */,
 				248F7EB120292E2A002C6114 /* Login */,
 				2473EB10201D098500CE838F /* Storyboards */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1A9B38202DE661005E2E05 /* PeerTutorMapViewController.swift in Sources */,
 				24E43AB02029609C00FBF232 /* AddPeerTutorTableViewCell.swift in Sources */,
 				246C4884201E1BFC00C1EAAB /* User.swift in Sources */,
 				242DEB0E202A78A300B42B55 /* TutorModel.swift in Sources */,
@@ -453,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 463ZNHD98J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Kevin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tantivirun.Kevin;
@@ -469,7 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 463ZNHD98J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Kevin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tantivirun.Kevin;
