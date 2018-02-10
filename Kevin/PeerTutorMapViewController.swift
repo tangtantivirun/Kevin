@@ -12,9 +12,10 @@ import MapKit
 class PeerTutorMapViewController: UIViewController {
   
     @IBOutlet weak var mapView: MKMapView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
         let centerLocation = CLLocation(latitude: 43.1948, longitude: -71.5734)
         
         let regionSpan: CLLocationDistance = 500
@@ -24,6 +25,10 @@ class PeerTutorMapViewController: UIViewController {
         }
         centerMapOnLocation(location: centerLocation)
 
+    }
+    @objc func backAction(){
+        //print("Back Button Clicked")
+        dismiss(animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
