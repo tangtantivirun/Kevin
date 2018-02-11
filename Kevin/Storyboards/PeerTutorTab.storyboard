@@ -63,8 +63,8 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Peer Tutor! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBK-No-9WI">
-                                <rect key="frame" x="45" y="122" width="230" height="33"/>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
+                                <rect key="frame" x="45" y="128.5" width="230" height="26.5"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -125,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVz-9x-nUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2921.25" y="1925.7042253521126"/>
+            <point key="canvasLocation" x="3318.75" y="1925.7042253521126"/>
         </scene>
         <!--How To Use: For Peer Tutors-->
         <scene sceneID="p62-kw-HVE">
@@ -205,10 +205,10 @@ We put a lot of thought into it, and we hope you love it.</string>
             </objects>
             <point key="canvasLocation" x="3985" y="558"/>
         </scene>
-        <!--Requests-->
+        <!--Requests -->
         <scene sceneID="bkF-SK-ulg">
             <objects>
-                <tableViewController id="tLP-tE-JeF" sceneMemberID="viewController">
+                <tableViewController id="tLP-tE-JeF" customClass="RequestTableViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TPq-AT-MMd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,11 +228,13 @@ We put a lot of thought into it, and we hope you love it.</string>
                             <outlet property="delegate" destination="tLP-tE-JeF" id="wEH-Dm-fkT"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Requests" image="list" id="EW0-S8-3Nf"/>
+                    <navigationItem key="navigationItem" title="Requests " id="49B-4D-Rax">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="WYD-6A-xC7"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qw-3X-B6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118" y="2523"/>
+            <point key="canvasLocation" x="1118" y="3248"/>
         </scene>
         <!--Peer Tutor Map View Controller-->
         <scene sceneID="Vgx-Ac-72R">
@@ -264,7 +266,7 @@ We put a lot of thought into it, and we hope you love it.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4W1-8d-A3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1877" y="2782"/>
+            <point key="canvasLocation" x="2274.375" y="2781.3380281690143"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OoE-wL-eIm">
@@ -279,7 +281,7 @@ We put a lot of thought into it, and we hope you love it.</string>
                     <connections>
                         <segue destination="FeB-Ur-FF3" kind="relationship" relationship="viewControllers" id="XDi-7d-0Xt"/>
                         <segue destination="QHJ-4b-CNH" kind="relationship" relationship="viewControllers" id="Ytc-o3-vnI"/>
-                        <segue destination="tLP-tE-JeF" kind="relationship" relationship="viewControllers" id="F3A-ht-LNy"/>
+                        <segue destination="et5-QW-IdG" kind="relationship" relationship="viewControllers" id="F3A-ht-LNy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNY-IS-i3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -290,7 +292,7 @@ We put a lot of thought into it, and we hope you love it.</string>
         <scene sceneID="UHU-Hl-zYT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FeB-Ur-FF3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="tCB-u3-twu"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="tCB-u3-twu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3D-GH-hH3">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -358,12 +360,31 @@ We put a lot of thought into it, and we hope you love it.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5D-JN-U6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876.875" y="2067.2535211267605"/>
+            <point key="canvasLocation" x="2274.375" y="2066.1971830985917"/>
+        </scene>
+        <!--Requests-->
+        <scene sceneID="fAi-TC-h42">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="et5-QW-IdG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Requests" image="list" id="EW0-S8-3Nf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="62L-zq-UdT">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tLP-tE-JeF" kind="relationship" relationship="rootViewController" id="mSW-mc-EqF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZpA-UP-VA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117.5" y="2522.5352112676055"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Home" width="32" height="32"/>
         <image name="find" width="32" height="32"/>
+        <image name="home" width="32" height="32"/>
         <image name="list" width="32" height="32"/>
     </resources>
 </document>

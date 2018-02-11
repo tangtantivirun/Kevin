@@ -38,7 +38,7 @@ class AddRequestViewController: UIViewController {
             let subject = subjectTextField.text,
             let classes = classTextField.text,
             let location = locationTextField.text
-
+            
      else {
     let error = ""
     //Tells the user that there is an error and then gets firebase to tell them the error
