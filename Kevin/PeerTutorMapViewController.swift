@@ -8,15 +8,22 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class PeerTutorMapViewController: UIViewController {
+class PeerTutorMapViewController: UIViewController, CLLocationManagerDelegate {
   
     @IBOutlet weak var mapView: MKMapView!
-
+    
+    let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
          navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
         let centerLocation = CLLocation(latitude: 43.1948, longitude: -71.5734)
         
         let regionSpan: CLLocationDistance = 500
@@ -31,6 +38,7 @@ class PeerTutorMapViewController: UIViewController {
         //print("Back Button Clicked")
         dismiss(animated: true, completion: nil)
     }
+    
 
     @IBAction func segmentedControlAction(sender: UISegmentedControl!) {
         switch (sender.selectedSegmentIndex) {
