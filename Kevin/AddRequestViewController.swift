@@ -50,7 +50,7 @@ class AddRequestViewController: UIViewController {
     self.present(alertController, animated: true, completion: nil)
         return
         }
-            let request = ["subject": subject, "classes": classes, "location": location]
+        let request = ["subject": subject, "classes": classes, "location": location, "timestamp": ServerValue.timestamp()] as [String : Any]
         let ref = Database.database().reference().child("request").child(firUser.uid).childByAutoId()
 
         ref.setValue(request) { (error, ref) in
