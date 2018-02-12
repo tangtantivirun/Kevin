@@ -10,10 +10,10 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class PeerTutorMapViewController: UIViewController, CLLocationManagerDelegate {
+class PeerTutorMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
   
     @IBOutlet weak var mapView: MKMapView!
-    
+   
     let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
