@@ -13,6 +13,7 @@ class PeerTutorMapViewController: UIViewController {
   
     @IBOutlet weak var mapView: MKMapView!
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
          navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
@@ -31,11 +32,17 @@ class PeerTutorMapViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func segmentedControlAction(sender: UISegmentedControl!) {
+        switch (sender.selectedSegmentIndex) {
+        case 0:
+            mapView.mapType = .standard
+        case 1:
+            mapView.mapType = .satellite
+        default:
+            mapView.mapType = .hybrid
+        }
     }
-    
+   
 
     /*
     // MARK: - Navigation
