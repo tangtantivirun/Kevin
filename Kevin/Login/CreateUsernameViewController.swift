@@ -18,7 +18,6 @@ class CreateUsernameViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nextButton.layer.cornerRadius = 6
     }
     
@@ -38,8 +37,9 @@ class CreateUsernameViewController: ViewController {
             ref.observeSingleEvent(of: .value, with: { (snapshot) in
                 _ = User(snapshot: snapshot)
             })
-        }
+        
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
         self.present(vc!, animated: true, completion: nil)
+        }
     }
 }
