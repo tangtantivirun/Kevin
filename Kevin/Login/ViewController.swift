@@ -20,14 +20,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func viewDidAppear(_ animated: Bool) {
-        if Auth.auth().currentUser != nil {
-            let newViewController: HomeVC = HomeVC ()
-            self.present(newViewController, animated: true, completion: nil)
         if (Auth.auth().currentUser != nil) {
             print("success")
         }
     }
-        
     @IBAction func loginTapped(_ sender: Any) {
         if self.emailTextField.text == "" || self.passwordTextField.text == "" {
             
