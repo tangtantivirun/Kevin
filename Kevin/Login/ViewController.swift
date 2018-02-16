@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loginButton.layer.cornerRadius = 6
         if Auth.auth().currentUser != nil {
-            //Go to the HomeViewController if the login is sucessful
+            //Go to the HomeViewController if user has already logged in
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "Home")
             self.present(vc, animated: true, completion: nil)
         }
