@@ -17,8 +17,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.layer.cornerRadius = 6
-        // Do any additional setup after loading the view, typically from a nib.
+        if Auth.auth().currentUser != nil {
+            //Go to the HomeViewController if the login is sucessful
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "Home")
+            self.present(vc, animated: true, completion: nil)
+        }
     }
+        // Do any additional setup after loading the view, typically from a nib.
     override func viewDidAppear(_ animated: Bool) {
         if (Auth.auth().currentUser != nil) {
             print("success")
