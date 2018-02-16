@@ -92,7 +92,7 @@
         <!--How To Use: For Peer Tutors-->
         <scene sceneID="p62-kw-HVE">
             <objects>
-                <viewController id="nqT-Wv-CAK" sceneMemberID="viewController">
+                <viewController id="nqT-Wv-CAK" customClass="PeerTutorHowToUse" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="szv-dc-oRJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,9 @@ If at any point you want to seek help for yourself, you’re able and encouraged
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N4m-zW-mak"/>
                     </view>
-                    <navigationItem key="navigationItem" title="How To Use: For Peer Tutors" id="RiT-KL-ctU"/>
+                    <navigationItem key="navigationItem" title="How To Use: For Peer Tutors" id="RiT-KL-ctU">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="rom-Nm-Yru"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5H-rn-96Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,7 +131,7 @@ If at any point you want to seek help for yourself, you’re able and encouraged
         <!--About PeerTutorConnect-->
         <scene sceneID="Abh-DF-yyn">
             <objects>
-                <viewController id="Qm3-NE-qRB" sceneMemberID="viewController">
+                <viewController id="Qm3-NE-qRB" customClass="PeerTutorAboutTheApp" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="rlP-1Q-nHe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +163,9 @@ We put a lot of thought into it, and we hope you love it.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sJP-UN-H8H"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About PeerTutorConnect" id="4Iq-C5-WJS"/>
+                    <navigationItem key="navigationItem" title="About PeerTutorConnect" id="4Iq-C5-WJS">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="iCj-X4-3zr"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjQ-EK-bu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

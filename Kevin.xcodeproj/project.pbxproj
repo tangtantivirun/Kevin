@@ -33,6 +33,8 @@
 		24E43AB02029609C00FBF232 /* AddPeerTutorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E43AAE2029609C00FBF232 /* AddPeerTutorTableViewCell.swift */; };
 		24E43AB12029609C00FBF232 /* AddPeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E43AAF2029609C00FBF232 /* AddPeerTutorViewController.swift */; };
 		24EE44472025042A00DA0627 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */; };
+		24F55845203681CC00550DF0 /* PeerTutorAboutTheApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F55844203681CC00550DF0 /* PeerTutorAboutTheApp.swift */; };
+		24F55847203681E700550DF0 /* PeerTutorHowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */; };
 		8B1A9B38202DE661005E2E05 /* PeerTutorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */; };
 		99590790FE8527CD41999B44 /* Pods_Kevin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		24E43AAE2029609C00FBF232 /* AddPeerTutorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPeerTutorTableViewCell.swift; sourceTree = "<group>"; };
 		24E43AAF2029609C00FBF232 /* AddPeerTutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPeerTutorViewController.swift; sourceTree = "<group>"; };
 		24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		24F55844203681CC00550DF0 /* PeerTutorAboutTheApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorAboutTheApp.swift; sourceTree = "<group>"; };
+		24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorHowToUse.swift; sourceTree = "<group>"; };
 		284E604B31FA1165D25C509A /* Pods-Kevin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.debug.xcconfig"; sourceTree = "<group>"; };
 		53B8520AB50839189DB0FB70 /* Pods-Kevin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.release.xcconfig"; sourceTree = "<group>"; };
 		8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorMapViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				240DE0F32030B29600EDDB37 /* Time.swift */,
 				240DE0F52030CC5000EDDB37 /* RequestTableViewController.swift */,
 				240DE0F72030D08A00EDDB37 /* Requests.swift */,
+				24F55844203681CC00550DF0 /* PeerTutorAboutTheApp.swift */,
+				24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */,
 			);
 			path = Kevin;
 			sourceTree = "<group>";
@@ -330,8 +336,10 @@
 				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				240DE0F82030D08A00EDDB37 /* Requests.swift in Sources */,
 				24216ECC2014189900457CD2 /* GradientView.swift in Sources */,
+				24F55845203681CC00550DF0 /* PeerTutorAboutTheApp.swift in Sources */,
 				24284C692027E654003DE875 /* UserService.swift in Sources */,
 				24E43AB12029609C00FBF232 /* AddPeerTutorViewController.swift in Sources */,
+				24F55847203681E700550DF0 /* PeerTutorHowToUse.swift in Sources */,
 				24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */,
 				248F7EAE20292AE6002C6114 /* PeerTutorViewController.swift in Sources */,
 				24EE44472025042A00DA0627 /* CreateUsernameViewController.swift in Sources */,
