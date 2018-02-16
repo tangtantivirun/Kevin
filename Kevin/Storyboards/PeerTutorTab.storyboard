@@ -243,7 +243,7 @@ We put a lot of thought into it, and we hope you love it.</string>
                     <navigationItem key="navigationItem" id="B9J-NG-ivq">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="w41-oH-ukJ">
-                            <rect key="frame" x="38" y="7.5" width="244" height="29"/>
+                            <rect key="frame" x="38" y="7" width="244" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Ordinary"/>
