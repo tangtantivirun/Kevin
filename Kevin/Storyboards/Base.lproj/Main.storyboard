@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cv3-IZ-qA9" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="131.78410794602701"/>
+            <point key="canvasLocation" x="1444" y="132"/>
         </scene>
         <!--Forgot PasswordVC-->
         <scene sceneID="8hO-fR-6fI">
@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RkW-fu-QY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500" y="875"/>
+            <point key="canvasLocation" x="2241" y="866"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="2ud-HW-cmq">
@@ -246,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSl-VO-II7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3196" y="131"/>
+            <point key="canvasLocation" x="3079" y="131"/>
         </scene>
         <!--Create Username View Controller-->
         <scene sceneID="MGg-gk-zuG">
@@ -326,7 +326,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAY-h2-lav" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814.39999999999998" y="875.26236881559225"/>
+            <point key="canvasLocation" x="1444" y="866"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="jW8-bh-3rY">
@@ -423,6 +423,13 @@
                                     <action selector="logoutAction:" destination="qol-kx-R44" eventType="touchUpInside" id="nDH-K5-rwK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY7-Eu-Fjx">
+                                <rect key="frame" x="165" y="337" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63921568630000003" green="0.80784313730000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -482,7 +489,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyv-9W-Plt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2534.4000000000001" y="131.33433283358323"/>
+            <point key="canvasLocation" x="2241" y="132"/>
         </scene>
         <!--PeerTutorTab-->
         <scene sceneID="uuG-eR-A4y">
@@ -490,7 +497,7 @@
                 <viewControllerPlaceholder storyboardName="PeerTutorTab" id="YBj-Tu-dLW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1f-6z-EDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1514" y="1776"/>
+            <point key="canvasLocation" x="1354" y="1607"/>
         </scene>
         <!--Admin-->
         <scene sceneID="e24-Vi-FRx">
