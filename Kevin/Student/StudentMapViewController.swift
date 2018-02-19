@@ -13,7 +13,7 @@ import CoreLocation
 class StudentMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
     {
     
-    @IBOutlet weak var StudentMap: MKMapView!
+    @IBOutlet weak var mapView2: MKMapView!
     
     let locationManager = CLLocationManager()
     
@@ -30,7 +30,7 @@ class StudentMapViewController: UIViewController, MKMapViewDelegate, CLLocationM
         let regionSpan: CLLocationDistance = 500
         func centerMapOnLocation(location: CLLocation) {
             let selectedRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionSpan, regionSpan)
-            mapView.setRegion(selectedRegion, animated: true)
+            mapView2.setRegion(selectedRegion, animated: true)
         }
         centerMapOnLocation(location: centerLocation)
     }
@@ -48,11 +48,11 @@ class StudentMapViewController: UIViewController, MKMapViewDelegate, CLLocationM
     @IBAction func mapTypeSelection(_ sender: UISegmentedControl) {
         switch (sender.selectedSegmentIndex) {
         case 0:
-            mapView.mapType = .standard
+            mapView2.mapType = .standard
         case 1:
-            mapView.mapType = .satellite
+            mapView2.mapType = .satellite
         default:
-            mapView.mapType = .hybrid
+            mapView2.mapType = .hybrid
         }
     }
     
