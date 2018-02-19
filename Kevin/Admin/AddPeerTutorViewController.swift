@@ -44,7 +44,7 @@ class AddPeerTutorViewController: UIViewController, UITableViewDelegate, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        refTutors = Database.database().reference().child("PeerTutors").childByAutoId()
+        refTutors = Database.database().reference().child("PeerTutors")
         refTutors.observe(DataEventType.value, with: { (snapshot) in
             if snapshot.childrenCount > 0 {
                 self.tutorList.removeAll()
