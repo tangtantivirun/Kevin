@@ -9,4 +9,5 @@ target 'Kevin' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
 	pod 'FirebaseDatabase'
+    pod 'Socket.IO-Client-Swift', '~> 13.1'
 end
