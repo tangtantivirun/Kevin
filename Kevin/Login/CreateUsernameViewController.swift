@@ -21,10 +21,10 @@ class CreateUsernameViewController: UIViewController {
         nextButton.layer.cornerRadius = 6
     }
     @IBAction func nextButtonTapped(_ sender: Any) {
-        let username = usernameTextField.text
-      
+        let name = usernameTextField.text
+        let email = Auth.auth().currentUser?.email
         
-        let userAttrs = ["username": username]
+        let userAttrs = ["name": name, "email": email ]
         let ref = Database.database().reference().child("users").child((firUser?.uid)!)
         
         ref.setValue(userAttrs) {(error, ref) in
