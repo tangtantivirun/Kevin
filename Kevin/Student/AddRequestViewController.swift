@@ -19,6 +19,7 @@ class AddRequestViewController: UIViewController {
     
     let location = ["Hargate", "Library", "Schoolhouse", "Lindsey"]
     var selectedLocation: String?
+    let currentUserEmail = Auth.auth().currentUser?.email
     
     @IBOutlet weak var submitButton: UIButton!
     override func viewDidLoad() {
@@ -34,7 +35,7 @@ class AddRequestViewController: UIViewController {
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
-        guard let firUser = Auth.auth().currentUser,
+        guard let _ = Auth.auth().currentUser,
             let subject = subjectTextField.text,
             let classes = classTextField.text,
             let location = locationTextField.text
@@ -50,8 +51,8 @@ class AddRequestViewController: UIViewController {
     self.present(alertController, animated: true, completion: nil)
         return
         }
-        let request = ["subject": subject, "classes": classes, "location": location, "timestamp": ServerValue.timestamp()] as [String : Any]
-        let ref = Database.database().reference().child("request").child(firUser.uid).childByAutoId()
+        let request = ["subject": subject, "classes": classes, "location": location, "timestamp": ServerValue.timestamp(), "requested by": currentUserEmail as Any] as [String : Any]
+        let ref = Database.database().reference().child("request").childByAutoId()
 
         ref.setValue(request) { (error, ref) in
             if let error = error {

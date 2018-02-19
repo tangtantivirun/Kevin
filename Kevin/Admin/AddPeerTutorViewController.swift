@@ -13,7 +13,6 @@ import FirebaseDatabase
 
 class AddPeerTutorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var refTutors: DatabaseReference!
-    let firUser = Auth.auth().currentUser
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var subjectTextField: UITextField!
@@ -45,7 +44,7 @@ class AddPeerTutorViewController: UIViewController, UITableViewDelegate, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        refTutors = Database.database().reference().child("PeerTutors").child(firUser!.uid)
+        refTutors = Database.database().reference().child("PeerTutors").childByAutoId()
         refTutors.observe(DataEventType.value, with: { (snapshot) in
             if snapshot.childrenCount > 0 {
                 self.tutorList.removeAll()
