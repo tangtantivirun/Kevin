@@ -19,6 +19,7 @@
 		24284C692027E654003DE875 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C682027E654003DE875 /* UserService.swift */; };
 		24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */; };
 		242DEB0E202A78A300B42B55 /* TutorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242DEB0D202A78A300B42B55 /* TutorModel.swift */; };
+		24584187203A6FB300AD4F5C /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24584186203A6FB300AD4F5C /* CreateUsernameViewController.swift */; };
 		246C4884201E1BFC00C1EAAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C4883201E1BFC00C1EAAB /* User.swift */; };
 		248F7EAE20292AE6002C6114 /* PeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */; };
 		248F7EB020292BE0002C6114 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EAF20292BE0002C6114 /* StudentViewController.swift */; };
@@ -32,7 +33,6 @@
 		24D5CAA21FD5D19C00B1EDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */; };
 		24E43AB02029609C00FBF232 /* AddPeerTutorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E43AAE2029609C00FBF232 /* AddPeerTutorTableViewCell.swift */; };
 		24E43AB12029609C00FBF232 /* AddPeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E43AAF2029609C00FBF232 /* AddPeerTutorViewController.swift */; };
-		24EE44472025042A00DA0627 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */; };
 		24F55845203681CC00550DF0 /* PeerTutorAboutTheApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F55844203681CC00550DF0 /* PeerTutorAboutTheApp.swift */; };
 		24F55847203681E700550DF0 /* PeerTutorHowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */; };
 		8B1A9B38202DE661005E2E05 /* PeerTutorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */; };
@@ -52,6 +52,7 @@
 		24284C682027E654003DE875 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequestViewController.swift; sourceTree = "<group>"; };
 		242DEB0D202A78A300B42B55 /* TutorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorModel.swift; sourceTree = "<group>"; };
+		24584186203A6FB300AD4F5C /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		246C4883201E1BFC00C1EAAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorViewController.swift; sourceTree = "<group>"; };
 		248F7EAF20292BE0002C6114 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		24D5CAA61FD5D19C00B1EDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24E43AAE2029609C00FBF232 /* AddPeerTutorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPeerTutorTableViewCell.swift; sourceTree = "<group>"; };
 		24E43AAF2029609C00FBF232 /* AddPeerTutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPeerTutorViewController.swift; sourceTree = "<group>"; };
-		24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		24F55844203681CC00550DF0 /* PeerTutorAboutTheApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorAboutTheApp.swift; sourceTree = "<group>"; };
 		24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorHowToUse.swift; sourceTree = "<group>"; };
 		284E604B31FA1165D25C509A /* Pods-Kevin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 			children = (
 				24D5CA9C1FD5D19C00B1EDD7 /* ViewController.swift */,
 				24D12BD12002B35200491EC6 /* SignUpVC.swift */,
-				24EE44462025042A00DA0627 /* CreateUsernameViewController.swift */,
 				24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */,
+				24584186203A6FB300AD4F5C /* CreateUsernameViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -366,7 +366,7 @@
 				24F55847203681E700550DF0 /* PeerTutorHowToUse.swift in Sources */,
 				24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */,
 				248F7EAE20292AE6002C6114 /* PeerTutorViewController.swift in Sources */,
-				24EE44472025042A00DA0627 /* CreateUsernameViewController.swift in Sources */,
+				24584187203A6FB300AD4F5C /* CreateUsernameViewController.swift in Sources */,
 				24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */,
 				248F7EB020292BE0002C6114 /* StudentViewController.swift in Sources */,
 			);
