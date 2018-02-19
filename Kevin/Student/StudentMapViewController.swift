@@ -19,7 +19,7 @@ class StudentMapViewController: UIViewController, MKMapViewDelegate, CLLocationM
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(BackButton))
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
