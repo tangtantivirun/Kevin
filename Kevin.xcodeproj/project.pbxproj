@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24034E15203A77BA0051561B /* StudentMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24034E14203A77BA0051561B /* StudentMapViewController.swift */; };
+		24034E17203B4C440051561B /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24034E16203B4C440051561B /* Member.swift */; };
 		240DE0F42030B29600EDDB37 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DE0F32030B29600EDDB37 /* Time.swift */; };
 		240DE0F62030CC5000EDDB37 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DE0F52030CC5000EDDB37 /* RequestTableViewController.swift */; };
 		240DE0F82030D08A00EDDB37 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DE0F72030D08A00EDDB37 /* Requests.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		24034E14203A77BA0051561B /* StudentMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentMapViewController.swift; sourceTree = "<group>"; };
+		24034E16203B4C440051561B /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		240DE0F32030B29600EDDB37 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Time.swift; path = ../Time.swift; sourceTree = "<group>"; };
 		240DE0F52030CC5000EDDB37 /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		240DE0F72030D08A00EDDB37 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				24D5CAA11FD5D19C00B1EDD7 /* Assets.xcassets */,
 				24216ED920159FC100457CD2 /* GoogleService-Info.plist */,
 				24216ECB2014189900457CD2 /* GradientView.swift */,
+				24034E16203B4C440051561B /* Member.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				24584187203A6FB300AD4F5C /* CreateUsernameViewController.swift in Sources */,
 				24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */,
 				248F7EB020292BE0002C6114 /* StudentViewController.swift in Sources */,
+				24034E17203B4C440051561B /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
