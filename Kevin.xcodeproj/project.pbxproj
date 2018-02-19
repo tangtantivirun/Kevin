@@ -35,6 +35,7 @@
 		24E43AB12029609C00FBF232 /* AddPeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E43AAF2029609C00FBF232 /* AddPeerTutorViewController.swift */; };
 		24F55845203681CC00550DF0 /* PeerTutorAboutTheApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F55844203681CC00550DF0 /* PeerTutorAboutTheApp.swift */; };
 		24F55847203681E700550DF0 /* PeerTutorHowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */; };
+		8B14B8C1203A682D00D13CDD /* StudentMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14B8C0203A682D00D13CDD /* StudentMapViewController.swift */; };
 		8B1A9B38202DE661005E2E05 /* PeerTutorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */; };
 		99590790FE8527CD41999B44 /* Pods_Kevin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorHowToUse.swift; sourceTree = "<group>"; };
 		284E604B31FA1165D25C509A /* Pods-Kevin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.debug.xcconfig"; sourceTree = "<group>"; };
 		53B8520AB50839189DB0FB70 /* Pods-Kevin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kevin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kevin/Pods-Kevin.release.xcconfig"; sourceTree = "<group>"; };
+		8B14B8C0203A682D00D13CDD /* StudentMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMapViewController.swift; sourceTree = "<group>"; };
 		8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorMapViewController.swift; sourceTree = "<group>"; };
 		F1C9C7542F2036C8A2D104BC /* Pods_Kevin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kevin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -359,6 +361,7 @@
 				24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */,
 				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				240DE0F82030D08A00EDDB37 /* Requests.swift in Sources */,
+				8B14B8C1203A682D00D13CDD /* StudentMapViewController.swift in Sources */,
 				24216ECC2014189900457CD2 /* GradientView.swift in Sources */,
 				24F55845203681CC00550DF0 /* PeerTutorAboutTheApp.swift in Sources */,
 				24284C692027E654003DE875 /* UserService.swift in Sources */,
