@@ -18,6 +18,7 @@
         <!--PeerTutorConnect-->
         <scene sceneID="0PQ-2Z-Ryv">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv3-IZ-qA9" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="Main" id="BES-37-Fh9" customClass="ViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6qb-uh-S2e" customClass="View" customModule="Kevin">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -66,7 +67,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="1gk-2J-EUQ"/>
                                         </constraints>
                                         <state key="normal" title="Login">
-                                            <color key="titleColor" red="0.85696072050000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="loginTapped:" destination="BES-37-Fh9" eventType="touchUpInside" id="U2Z-q5-iMe"/>
@@ -115,7 +116,6 @@
                         <outlet property="passwordTextField" destination="qG5-3S-fJn" id="CM6-b2-go4"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv3-IZ-qA9" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1444" y="132"/>
         </scene>

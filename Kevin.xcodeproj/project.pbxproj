@@ -26,6 +26,9 @@
 		248F7EAE20292AE6002C6114 /* PeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */; };
 		248F7EB020292BE0002C6114 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EAF20292BE0002C6114 /* StudentViewController.swift */; };
 		248F7EB3202944C0002C6114 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F7EB2202944C0002C6114 /* AdminViewController.swift */; };
+		24BF395C203B6B7D00B47244 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF395B203B6B7D00B47244 /* GetRequest.swift */; };
+		24BF395E203BC47C00B47244 /* CurrentRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF395D203BC47C00B47244 /* CurrentRequestViewController.swift */; };
+		24BF3962203BCDC400B47244 /* CurrentRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3961203BCDC400B47244 /* CurrentRequestTableViewCell.swift */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
 		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
@@ -61,6 +64,9 @@
 		248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerTutorViewController.swift; sourceTree = "<group>"; };
 		248F7EAF20292BE0002C6114 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
 		248F7EB2202944C0002C6114 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		24BF395B203B6B7D00B47244 /* GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
+		24BF395D203BC47C00B47244 /* CurrentRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRequestViewController.swift; sourceTree = "<group>"; };
+		24BF3961203BCDC400B47244 /* CurrentRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRequestTableViewCell.swift; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 				24216ED920159FC100457CD2 /* GoogleService-Info.plist */,
 				24216ECB2014189900457CD2 /* GradientView.swift */,
 				24034E16203B4C440051561B /* Member.swift */,
+				24BF395B203B6B7D00B47244 /* GetRequest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -172,6 +179,8 @@
 				24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */,
 				240DE0F52030CC5000EDDB37 /* RequestTableViewController.swift */,
 				8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */,
+				24BF395D203BC47C00B47244 /* CurrentRequestViewController.swift */,
+				24BF3961203BCDC400B47244 /* CurrentRequestTableViewCell.swift */,
 			);
 			path = "Peer Tutor ";
 			sourceTree = "<group>";
@@ -359,10 +368,13 @@
 				240DE0F62030CC5000EDDB37 /* RequestTableViewController.swift in Sources */,
 				24E43AB02029609C00FBF232 /* AddPeerTutorTableViewCell.swift in Sources */,
 				246C4884201E1BFC00C1EAAB /* User.swift in Sources */,
+				24BF3962203BCDC400B47244 /* CurrentRequestTableViewCell.swift in Sources */,
 				242DEB0E202A78A300B42B55 /* TutorModel.swift in Sources */,
 				24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */,
 				24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */,
+				24BF395C203B6B7D00B47244 /* GetRequest.swift in Sources */,
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,
+				24BF395E203BC47C00B47244 /* CurrentRequestViewController.swift in Sources */,
 				248F7EB3202944C0002C6114 /* AdminViewController.swift in Sources */,
 				24034E15203A77BA0051561B /* StudentMapViewController.swift in Sources */,
 				24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */,

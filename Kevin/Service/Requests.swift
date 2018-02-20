@@ -13,6 +13,7 @@ class Requests: NSObject {
     var classes: String?
     var location: String?
     var subject: String?
+    
     init(dictionary: [String: Any]) {
         self.classes = dictionary["class"] as? String ?? ""
         self.location = dictionary["location"] as? String ?? ""
