@@ -18,8 +18,10 @@ class CurrentRequestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        self.tableView.rowHeight = 120
         loadCurrentRequests()
     }
+    
     func loadCurrentRequests() {
         Database.database().reference().child("request").observe(.childAdded) { (snapshot: DataSnapshot) in
             if let dict = snapshot.value as? [String: Any] {
