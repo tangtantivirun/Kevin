@@ -417,6 +417,12 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                                                 <constraint firstItem="0Cy-48-Cck" firstAttribute="leading" secondItem="gap-xu-n7n" secondAttribute="leading" constant="6" id="zyj-xE-Iav"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="classLabel" destination="qlk-h8-Dh4" id="Exl-yZ-18Z"/>
+                                            <outlet property="locationLabel" destination="2nk-zV-4Gn" id="U6d-t8-Mpp"/>
+                                            <outlet property="subjectLabel" destination="gwL-7X-EIK" id="SLK-Hg-o2s"/>
+                                            <outlet property="timeLabel" destination="dRl-yD-4Ao" id="4Sp-vF-sbI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -431,6 +437,9 @@ If needed, admins have the ability to disable specific user accounts and bar acc
                         <viewLayoutGuide key="safeArea" id="A8Y-Bh-UUt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="list" id="PGJ-3o-UTJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="nah-0K-c2G" id="hMz-x6-kuM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWL-35-8v2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

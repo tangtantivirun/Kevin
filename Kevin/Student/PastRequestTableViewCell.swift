@@ -11,4 +11,17 @@ import UIKit
 
 class PastRequestTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var subjectLabel: UILabel!
+    @IBOutlet weak var classLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool){
+        super.setSelected(selected, animated: animated)
+    }
 }
