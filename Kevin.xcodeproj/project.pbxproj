@@ -31,6 +31,7 @@
 		24BF3962203BCDC400B47244 /* CurrentRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3961203BCDC400B47244 /* CurrentRequestTableViewCell.swift */; };
 		24BF3966203D488B00B47244 /* PastRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3965203D488B00B47244 /* PastRequestTableViewCell.swift */; };
 		24BF3968203D4CB700B47244 /* PastRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3967203D4CB700B47244 /* PastRequestViewController.swift */; };
+		24BF396A203D520A00B47244 /* ApprovedLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3969203D520A00B47244 /* ApprovedLocationsViewController.swift */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
 		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
@@ -71,6 +72,7 @@
 		24BF3961203BCDC400B47244 /* CurrentRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRequestTableViewCell.swift; sourceTree = "<group>"; };
 		24BF3965203D488B00B47244 /* PastRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastRequestTableViewCell.swift; sourceTree = "<group>"; };
 		24BF3967203D4CB700B47244 /* PastRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastRequestViewController.swift; sourceTree = "<group>"; };
+		24BF3969203D520A00B47244 /* ApprovedLocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovedLocationsViewController.swift; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				24E43AAE2029609C00FBF232 /* AddPeerTutorTableViewCell.swift */,
 				24284C662027E2C6003DE875 /* AdminTableViewController.swift */,
 				24E43AAF2029609C00FBF232 /* AddPeerTutorViewController.swift */,
+				24BF3969203D520A00B47244 /* ApprovedLocationsViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				248F7EB3202944C0002C6114 /* AdminViewController.swift in Sources */,
 				24034E15203A77BA0051561B /* StudentMapViewController.swift in Sources */,
 				24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */,
+				24BF396A203D520A00B47244 /* ApprovedLocationsViewController.swift in Sources */,
 				24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */,
 				240DE0F82030D08A00EDDB37 /* Requests.swift in Sources */,
 				24216ECC2014189900457CD2 /* GradientView.swift in Sources */,
