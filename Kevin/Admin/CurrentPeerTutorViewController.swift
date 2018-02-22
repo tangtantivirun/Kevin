@@ -19,7 +19,7 @@ class CurrentPeerTutorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        self.tableView.rowHeight = 120
+        self.tableView.rowHeight = 80
         loadCurrentTutors()
     }
     

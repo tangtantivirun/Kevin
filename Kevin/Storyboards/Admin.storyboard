@@ -29,14 +29,15 @@
                     <connections>
                         <segue destination="G6k-Gg-KzW" kind="relationship" relationship="viewControllers" id="pC1-ZL-TCr"/>
                         <segue destination="H3Y-0x-UBN" kind="relationship" relationship="viewControllers" id="stu-X9-eVT"/>
-                        <segue destination="bFY-vZ-M3J" kind="relationship" relationship="viewControllers" id="gxn-Wm-cGh"/>
+                        <segue destination="J8i-w4-qdw" kind="relationship" relationship="viewControllers" id="kra-SL-nNC"/>
+                        <segue destination="hfr-dm-bCu" kind="relationship" relationship="viewControllers" id="Kfe-2J-lfb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2C-Wo-jmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1265.5999999999999" y="2159.8200899550225"/>
         </scene>
-        <!--All Request View Controller-->
+        <!--Requests-->
         <scene sceneID="ZWO-fl-Dyw">
             <objects>
                 <viewController id="hfr-dm-bCu" customClass="AllRequestViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,14 +138,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zPb-e4-soe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="list" id="TI6-xb-Jb8"/>
+                    <tabBarItem key="tabBarItem" title="Requests" image="list" id="TI6-xb-Jb8"/>
                     <connections>
                         <outlet property="tableView" destination="UBc-cH-gyQ" id="cH6-I5-AoA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSa-XN-9GC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3438" y="1468"/>
+            <point key="canvasLocation" x="1265" y="2910"/>
         </scene>
         <!--Approved Locations View Controller-->
         <scene sceneID="5Xv-sx-8cc">
@@ -187,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d83-wm-6QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4143" y="788"/>
+            <point key="canvasLocation" x="4225" y="1468"/>
         </scene>
         <!--Users-->
         <scene sceneID="Dsl-qL-3JF">
@@ -257,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzG-mh-6Ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="2844"/>
+            <point key="canvasLocation" x="2023" y="2910"/>
         </scene>
         <!--Welcome Admin-->
         <scene sceneID="iAI-yn-laT">
@@ -274,7 +275,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rPl-FE-Qnl">
-                                <rect key="frame" x="0.0" y="217" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="217" width="375" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muI-ed-nlO">
                                         <rect key="frame" x="137.5" y="0.0" width="100" height="30"/>
@@ -288,17 +289,8 @@
                                             <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJX-G9-JrN">
-                                        <rect key="frame" x="133" y="60" width="109" height="30"/>
-                                        <state key="normal" title="See all requests">
-                                            <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="hfr-dm-bCu" kind="show" id="AfG-gb-aOg"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkB-Ba-Z5C">
-                                        <rect key="frame" x="119" y="90" width="137" height="30"/>
+                                        <rect key="frame" x="119" y="60" width="137" height="30"/>
                                         <state key="normal" title="Approved Locations">
                                             <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -307,7 +299,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg3-RQ-xBG">
-                                        <rect key="frame" x="159" y="120" width="57" height="30"/>
+                                        <rect key="frame" x="159" y="90" width="57" height="30"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -362,22 +354,22 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jy1-7f-GiC">
-                                                    <rect key="frame" x="10" y="5" width="355" height="63.5"/>
+                                                    <rect key="frame" x="10" y="5" width="355" height="61.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRk-Bu-wh3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="22.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-E3-9Xj">
-                                                            <rect key="frame" x="0.0" y="22.5" width="355" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="20.5" width="355" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORr-M7-kEG">
-                                                            <rect key="frame" x="0.0" y="43" width="355" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="41" width="355" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -386,10 +378,9 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Jy1-7f-GiC" secondAttribute="trailing" constant="10" id="DID-To-RvP"/>
-                                                <constraint firstItem="Jy1-7f-GiC" firstAttribute="top" secondItem="KXO-ui-2x1" secondAttribute="top" constant="5" id="FuY-UX-95h"/>
-                                                <constraint firstItem="Jy1-7f-GiC" firstAttribute="leading" secondItem="KXO-ui-2x1" secondAttribute="leading" constant="10" id="IiV-Rg-m1X"/>
-                                                <constraint firstAttribute="bottom" secondItem="Jy1-7f-GiC" secondAttribute="bottom" constant="5" id="Xp2-gG-5ll"/>
+                                                <constraint firstAttribute="bottom" secondItem="Jy1-7f-GiC" secondAttribute="bottom" constant="7" id="GHW-YM-Zfk"/>
+                                                <constraint firstAttribute="trailing" secondItem="Jy1-7f-GiC" secondAttribute="trailing" constant="10" id="t5c-bw-Kh2"/>
+                                                <constraint firstItem="Jy1-7f-GiC" firstAttribute="leading" secondItem="KXO-ui-2x1" secondAttribute="leading" constant="10" id="tm6-I7-kUU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -427,47 +418,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iwe-II-ZNe">
-                                <rect key="frame" x="86" y="161" width="203" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arU-hX-0zB">
-                                <rect key="frame" x="86" y="216" width="203" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Peer Tutor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrC-wK-SRR">
-                                <rect key="frame" x="86" y="268" width="203" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adding Peer Tutors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tg-fS-bQW">
-                                <rect key="frame" x="55" y="99" width="264" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding Peer Tutors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tg-fS-bQW">
+                                <rect key="frame" x="58" y="99" width="258" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" red="0.63921568630000003" green="0.80784313730000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyH-Rq-WqX">
-                                <rect key="frame" x="86" y="318" width="203" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.63921568630000003" green="0.80784313730000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Add">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="addButtonTapped:" destination="Cwl-cd-zhY" eventType="touchUpInside" id="bDw-n7-hAd"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YAQ-3n-hrS">
+                                <rect key="frame" x="87" y="186" width="200" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iwe-II-ZNe">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arU-hX-0zB">
+                                        <rect key="frame" x="0.0" y="40" width="200" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Peer Tutor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrC-wK-SRR">
+                                        <rect key="frame" x="0.0" y="80" width="200" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyH-Rq-WqX">
+                                        <rect key="frame" x="0.0" y="120" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.63921568630000003" green="0.80784313730000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="Cwl-cd-zhY" eventType="touchUpInside" id="bDw-n7-hAd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NuL-cT-I4e"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.45098039220000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YAQ-3n-hrS" firstAttribute="centerX" secondItem="7tg-fS-bQW" secondAttribute="centerX" id="4h8-Jj-Cnn"/>
+                            <constraint firstItem="Jxq-oY-hWW" firstAttribute="bottom" secondItem="YAQ-3n-hrS" secondAttribute="bottom" constant="282" id="ZaC-Bf-c6u"/>
+                            <constraint firstItem="YAQ-3n-hrS" firstAttribute="top" secondItem="7tg-fS-bQW" secondAttribute="bottom" constant="51" id="qsl-H9-L7v"/>
+                            <constraint firstItem="YAQ-3n-hrS" firstAttribute="centerX" secondItem="ICp-aS-VJs" secondAttribute="centerX" id="zCg-eJ-lXE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jxq-oY-hWW"/>
                     </view>
                     <connections>
@@ -516,24 +516,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljj-IP-ZiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3438" y="788"/>
+            <point key="canvasLocation" x="3438" y="1468"/>
         </scene>
         <!--Tutors-->
-        <scene sceneID="Z6h-d0-R3Z">
+        <scene sceneID="lOn-b4-RgU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bFY-vZ-M3J" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tutors" image="list" id="LgG-bO-rFK"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J8i-w4-qdw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tutors" image="list" id="xlM-jv-r40"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D0B-2y-AeE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HmO-5l-YKI">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Dfn-En-1CD" kind="relationship" relationship="rootViewController" id="7hT-PB-kWB"/>
+                        <segue destination="Dfn-En-1CD" kind="relationship" relationship="rootViewController" id="ucg-Hb-8mO"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UJP-fY-lWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5LY-fi-n3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2023" y="2157"/>
         </scene>
