@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class AddPeerTutorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AddPeerTutorViewController: UIViewController {
     var refTutors: DatabaseReference!
 
     @IBOutlet weak var nameTextField: UITextField!
@@ -22,6 +22,8 @@ class AddPeerTutorViewController: UIViewController, UITableViewDelegate, UITable
     
     var tutorList = [TutorModel]()
     
+   
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tutorList.count
     }

@@ -17,6 +17,8 @@
 		24216ED620159C2D00457CD2 /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED520159C2D00457CD2 /* Admin.storyboard */; };
 		24216ED820159C5C00457CD2 /* StudentTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED720159C5C00457CD2 /* StudentTab.storyboard */; };
 		24216EDA20159FC100457CD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED920159FC100457CD2 /* GoogleService-Info.plist */; };
+		2426F450203F13F900532CC8 /* CurrentPeerTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426F44F203F13F900532CC8 /* CurrentPeerTutorViewController.swift */; };
+		2426F452203F141000532CC8 /* CurrentPeerTutorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426F451203F141000532CC8 /* CurrentPeerTutorTableViewCell.swift */; };
 		24284C672027E2C6003DE875 /* AdminTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C662027E2C6003DE875 /* AdminTableViewController.swift */; };
 		24284C692027E654003DE875 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C682027E654003DE875 /* UserService.swift */; };
 		24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */; };
@@ -32,6 +34,8 @@
 		24BF3966203D488B00B47244 /* PastRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3965203D488B00B47244 /* PastRequestTableViewCell.swift */; };
 		24BF3968203D4CB700B47244 /* PastRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3967203D4CB700B47244 /* PastRequestViewController.swift */; };
 		24BF396A203D520A00B47244 /* ApprovedLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF3969203D520A00B47244 /* ApprovedLocationsViewController.swift */; };
+		24BF396C203DD31600B47244 /* AllRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF396B203DD31600B47244 /* AllRequestViewController.swift */; };
+		24BF396E203DD35800B47244 /* AllRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF396D203DD35800B47244 /* AllRequestTableViewCell.swift */; };
 		24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */; };
 		24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD12002B35200491EC6 /* SignUpVC.swift */; };
 		24D12BD62003110D00491EC6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12BD52003110D00491EC6 /* HomeVC.swift */; };
@@ -58,6 +62,8 @@
 		24216ED520159C2D00457CD2 /* Admin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
 		24216ED720159C5C00457CD2 /* StudentTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentTab.storyboard; sourceTree = "<group>"; };
 		24216ED920159FC100457CD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Kevin/Service/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2426F44F203F13F900532CC8 /* CurrentPeerTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPeerTutorViewController.swift; sourceTree = "<group>"; };
+		2426F451203F141000532CC8 /* CurrentPeerTutorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPeerTutorTableViewCell.swift; sourceTree = "<group>"; };
 		24284C662027E2C6003DE875 /* AdminTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTableViewController.swift; sourceTree = "<group>"; };
 		24284C682027E654003DE875 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		24284C6A2027F2C1003DE875 /* AddRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequestViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 		24BF3965203D488B00B47244 /* PastRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastRequestTableViewCell.swift; sourceTree = "<group>"; };
 		24BF3967203D4CB700B47244 /* PastRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastRequestViewController.swift; sourceTree = "<group>"; };
 		24BF3969203D520A00B47244 /* ApprovedLocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovedLocationsViewController.swift; sourceTree = "<group>"; };
+		24BF396B203DD31600B47244 /* AllRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRequestViewController.swift; sourceTree = "<group>"; };
+		24BF396D203DD35800B47244 /* AllRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRequestTableViewCell.swift; sourceTree = "<group>"; };
 		24D12BCF2002B26700491EC6 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		24D12BD12002B35200491EC6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		24D12BD52003110D00491EC6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -199,6 +207,10 @@
 				24284C662027E2C6003DE875 /* AdminTableViewController.swift */,
 				24E43AAF2029609C00FBF232 /* AddPeerTutorViewController.swift */,
 				24BF3969203D520A00B47244 /* ApprovedLocationsViewController.swift */,
+				24BF396B203DD31600B47244 /* AllRequestViewController.swift */,
+				24BF396D203DD35800B47244 /* AllRequestTableViewCell.swift */,
+				2426F44F203F13F900532CC8 /* CurrentPeerTutorViewController.swift */,
+				2426F451203F141000532CC8 /* CurrentPeerTutorTableViewCell.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -377,6 +389,7 @@
 				240DE0F42030B29600EDDB37 /* Time.swift in Sources */,
 				240DE0F62030CC5000EDDB37 /* RequestTableViewController.swift in Sources */,
 				24E43AB02029609C00FBF232 /* AddPeerTutorTableViewCell.swift in Sources */,
+				2426F450203F13F900532CC8 /* CurrentPeerTutorViewController.swift in Sources */,
 				246C4884201E1BFC00C1EAAB /* User.swift in Sources */,
 				24BF3962203BCDC400B47244 /* CurrentRequestTableViewCell.swift in Sources */,
 				24BF3966203D488B00B47244 /* PastRequestTableViewCell.swift in Sources */,
@@ -384,6 +397,7 @@
 				24284C6B2027F2C1003DE875 /* AddRequestViewController.swift in Sources */,
 				24D5CA9D1FD5D19C00B1EDD7 /* ViewController.swift in Sources */,
 				24BF395C203B6B7D00B47244 /* GetRequest.swift in Sources */,
+				2426F452203F141000532CC8 /* CurrentPeerTutorTableViewCell.swift in Sources */,
 				24D12BD02002B26700491EC6 /* ForgotPasswordVC.swift in Sources */,
 				24BF395E203BC47C00B47244 /* CurrentRequestViewController.swift in Sources */,
 				248F7EB3202944C0002C6114 /* AdminViewController.swift in Sources */,
@@ -397,7 +411,9 @@
 				24284C692027E654003DE875 /* UserService.swift in Sources */,
 				24E43AB12029609C00FBF232 /* AddPeerTutorViewController.swift in Sources */,
 				24F55847203681E700550DF0 /* PeerTutorHowToUse.swift in Sources */,
+				24BF396E203DD35800B47244 /* AllRequestTableViewCell.swift in Sources */,
 				24D12BD22002B35200491EC6 /* SignUpVC.swift in Sources */,
+				24BF396C203DD31600B47244 /* AllRequestViewController.swift in Sources */,
 				248F7EAE20292AE6002C6114 /* PeerTutorViewController.swift in Sources */,
 				24584187203A6FB300AD4F5C /* CreateUsernameViewController.swift in Sources */,
 				24D5CA9B1FD5D19C00B1EDD7 /* AppDelegate.swift in Sources */,
