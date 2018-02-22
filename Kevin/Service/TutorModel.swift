@@ -8,12 +8,14 @@
 
 import Foundation
 
-class TutorModel {
+class TutorModel: NSObject {
     var name: String?
+    var email: String?
     var subject: String?
     
-    init(name: String?, subject: String?) {
-        self.name = name
-        self.subject = subject 
+    init(dictionary: [String: Any]) {
+        self.name = dictionary["name"] as? String ?? ""
+        self.email = dictionary["email"] as? String ?? ""
+        self.subject = dictionary["subject"] as? String ?? ""
     }
 }

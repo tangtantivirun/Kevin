@@ -10,5 +10,7 @@ import Foundation
 import UIKit
 
 class CurrentPeerTutorTableViewCell: UITableViewCell {
-    
+    @IBOutlet weak var nameText: UILabel!
+    @IBOutlet weak var emailText: UILabel!
+    @IBOutlet weak var subjectText: UILabel!
 }

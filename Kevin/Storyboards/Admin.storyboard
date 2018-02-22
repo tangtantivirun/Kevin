@@ -29,7 +29,7 @@
                     <connections>
                         <segue destination="G6k-Gg-KzW" kind="relationship" relationship="viewControllers" id="pC1-ZL-TCr"/>
                         <segue destination="H3Y-0x-UBN" kind="relationship" relationship="viewControllers" id="stu-X9-eVT"/>
-                        <segue destination="hfr-dm-bCu" kind="relationship" relationship="viewControllers" id="bWo-b2-TcU"/>
+                        <segue destination="bFY-vZ-M3J" kind="relationship" relationship="viewControllers" id="gxn-Wm-cGh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2C-Wo-jmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSa-XN-9GC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2303.1999999999998" y="2138.6806596701649"/>
+            <point key="canvasLocation" x="3438" y="1468"/>
         </scene>
         <!--Approved Locations View Controller-->
         <scene sceneID="5Xv-sx-8cc">
@@ -187,9 +187,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d83-wm-6QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4117.6000000000004" y="2148.5757121439283"/>
+            <point key="canvasLocation" x="4143" y="788"/>
         </scene>
-        <!--Item-->
+        <!--Users-->
         <scene sceneID="Dsl-qL-3JF">
             <objects>
                 <viewController id="H3Y-0x-UBN" customClass="AdminTableViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
@@ -249,7 +249,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VTF-hj-GXK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QA9-tC-cDU"/>
+                    <tabBarItem key="tabBarItem" title="Users" image="list" id="QA9-tC-cDU"/>
                     <navigationItem key="navigationItem" id="Bed-yT-ldV"/>
                     <connections>
                         <outlet property="tableView" destination="m5C-V5-WIj" id="Mcp-O7-TWW"/>
@@ -257,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzG-mh-6Ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2021.5999999999999" y="2849.3253373313346"/>
+            <point key="canvasLocation" x="2023" y="2844"/>
         </scene>
         <!--Welcome Admin-->
         <scene sceneID="iAI-yn-laT">
@@ -289,12 +289,12 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJX-G9-JrN">
-                                        <rect key="frame" x="121.5" y="60" width="132" height="30"/>
-                                        <state key="normal" title="Register Peer Tutor">
+                                        <rect key="frame" x="133" y="60" width="109" height="30"/>
+                                        <state key="normal" title="See all requests">
                                             <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="TSS-CP-F4e" kind="show" id="aPB-LS-Hhs"/>
+                                            <segue destination="hfr-dm-bCu" kind="show" id="AfG-gb-aOg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkB-Ba-Z5C">
@@ -311,9 +311,6 @@
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" red="0.8980392157" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="Dfn-En-1CD" kind="show" id="fOZ-Ng-V9T"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -337,122 +334,10 @@
             </objects>
             <point key="canvasLocation" x="2724" y="1468"/>
         </scene>
-        <!--Add Peer Tutor View Controller-->
-        <scene sceneID="nAx-IR-S1k">
-            <objects>
-                <viewController id="TSS-CP-F4e" customClass="AddPeerTutorViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="exg-c6-evs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ouw-J5-zx7">
-                                <rect key="frame" x="16" y="224" width="343" height="394"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oRY-mb-mBf" customClass="AddPeerTutorTableViewCell" customModule="Kevin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oRY-mb-mBf" id="GwP-lY-cRi">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMa-xj-Fid">
-                                                    <rect key="frame" x="14" y="0.0" width="164" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="164" id="kbc-x8-cTF"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzo-Za-gFS">
-                                                    <rect key="frame" x="14" y="22" width="164" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="bMa-xj-Fid" firstAttribute="trailing" secondItem="Gzo-Za-gFS" secondAttribute="trailing" id="6X7-eF-izH"/>
-                                                <constraint firstItem="Gzo-Za-gFS" firstAttribute="top" secondItem="bMa-xj-Fid" secondAttribute="bottom" constant="1" id="X52-co-xsP"/>
-                                                <constraint firstItem="bMa-xj-Fid" firstAttribute="top" secondItem="GwP-lY-cRi" secondAttribute="top" id="cBc-7l-UXj"/>
-                                                <constraint firstItem="bMa-xj-Fid" firstAttribute="leading" secondItem="GwP-lY-cRi" secondAttribute="leadingMargin" constant="-1" id="hPr-Xh-odd"/>
-                                                <constraint firstItem="bMa-xj-Fid" firstAttribute="leading" secondItem="Gzo-Za-gFS" secondAttribute="leading" id="mzo-mp-dzV"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="nameLabel" destination="bMa-xj-Fid" id="7Da-Jw-OWt"/>
-                                            <outlet property="subjectLabel" destination="Gzo-Za-gFS" id="NZ6-jS-9tB"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="TSS-CP-F4e" id="eZc-9I-Eb8"/>
-                                    <outlet property="delegate" destination="TSS-CP-F4e" id="cFi-9s-JRZ"/>
-                                </connections>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peer Tutor Added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWz-dQ-wle">
-                                <rect key="frame" x="16" y="195.5" width="134" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ssp-c2-K8L">
-                                <rect key="frame" x="87" y="79" width="200" height="110"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdJ-XO-eIx">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Peer Tutor " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-tb-154">
-                                        <rect key="frame" x="0.0" y="40" width="200" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qke-Fv-vmH">
-                                        <rect key="frame" x="0.0" y="80" width="200" height="30"/>
-                                        <state key="normal" title="Add Peer Tutor"/>
-                                        <connections>
-                                            <action selector="addPeerTutorTapped:" destination="TSS-CP-F4e" eventType="touchUpInside" id="6Y9-8v-IPf"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="vAq-mp-Cj0"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="top" secondItem="Ssp-c2-K8L" secondAttribute="bottom" constant="35" id="HFh-9a-Bdi"/>
-                            <constraint firstItem="Ssp-c2-K8L" firstAttribute="centerX" secondItem="Ouw-J5-zx7" secondAttribute="centerX" id="IFS-yc-ctf"/>
-                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="bottom" secondItem="73j-59-IbR" secondAttribute="bottom" id="LsR-Ef-a4J"/>
-                            <constraint firstItem="Ssp-c2-K8L" firstAttribute="centerX" secondItem="exg-c6-evs" secondAttribute="centerX" id="c2x-6B-4yD"/>
-                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="leading" secondItem="VWz-dQ-wle" secondAttribute="leading" id="gkc-8U-sAr"/>
-                            <constraint firstItem="Ssp-c2-K8L" firstAttribute="top" secondItem="73j-59-IbR" secondAttribute="top" constant="15" id="ohA-el-HcQ"/>
-                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="top" secondItem="VWz-dQ-wle" secondAttribute="bottom" constant="8" symbolic="YES" id="tUP-Y3-j8n"/>
-                            <constraint firstItem="Ouw-J5-zx7" firstAttribute="leading" secondItem="exg-c6-evs" secondAttribute="leadingMargin" id="xbH-Jq-132"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="73j-59-IbR"/>
-                    </view>
-                    <connections>
-                        <outlet property="labelMessage" destination="VWz-dQ-wle" id="ApD-5r-rRn"/>
-                        <outlet property="nameTextField" destination="wdJ-XO-eIx" id="rP0-r6-LCc"/>
-                        <outlet property="subjectTextField" destination="kWV-tb-154" id="Umj-4Y-EFB"/>
-                        <outlet property="tableViewTutors" destination="Ouw-J5-zx7" id="L1q-qF-eXW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hha-Hq-uhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3400.8000000000002" y="1467.616191904048"/>
-        </scene>
-        <!--View Controller-->
+        <!--Current Peer Tutor View Controller-->
         <scene sceneID="H5M-7r-AHm">
             <objects>
-                <viewController id="Dfn-En-1CD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrentTutors" id="Dfn-En-1CD" customClass="CurrentPeerTutorViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L8U-Ez-W1p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,13 +354,49 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GA4-7D-GzB">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="74" id="GA4-7D-GzB" customClass="CurrentPeerTutorTableViewCell" customModule="Kevin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GA4-7D-GzB" id="KXO-ui-2x1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jy1-7f-GiC">
+                                                    <rect key="frame" x="10" y="5" width="355" height="63.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRk-Bu-wh3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="22.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-E3-9Xj">
+                                                            <rect key="frame" x="0.0" y="22.5" width="355" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORr-M7-kEG">
+                                                            <rect key="frame" x="0.0" y="43" width="355" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Jy1-7f-GiC" secondAttribute="trailing" constant="10" id="DID-To-RvP"/>
+                                                <constraint firstItem="Jy1-7f-GiC" firstAttribute="top" secondItem="KXO-ui-2x1" secondAttribute="top" constant="5" id="FuY-UX-95h"/>
+                                                <constraint firstItem="Jy1-7f-GiC" firstAttribute="leading" secondItem="KXO-ui-2x1" secondAttribute="leading" constant="10" id="IiV-Rg-m1X"/>
+                                                <constraint firstAttribute="bottom" secondItem="Jy1-7f-GiC" secondAttribute="bottom" constant="5" id="Xp2-gG-5ll"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailText" destination="AmD-E3-9Xj" id="gIY-kV-qgD"/>
+                                            <outlet property="nameText" destination="RRk-Bu-wh3" id="wyZ-7n-Uh1"/>
+                                            <outlet property="subjectText" destination="ORr-M7-kEG" id="JH3-17-GIb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -486,19 +407,22 @@
                     <navigationItem key="navigationItem" id="8Ke-k9-wix">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gIl-gI-SEj">
                             <connections>
-                                <segue destination="Cwl-cd-zhY" kind="show" id="lYz-II-bcy"/>
+                                <segue destination="Cwl-cd-zhY" kind="show" id="dYB-aY-cVb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hWj-4t-YhP" id="yZu-RX-V4S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJ9-Qa-10V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4085.5999999999999" y="1467.616191904048"/>
+            <point key="canvasLocation" x="2724" y="2159"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Peer Tutor View Controller-->
         <scene sceneID="Rrg-lW-WZX">
             <objects>
-                <viewController id="Cwl-cd-zhY" sceneMemberID="viewController">
+                <viewController id="Cwl-cd-zhY" customClass="AddPeerTutorViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ICp-aS-VJs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -538,15 +462,24 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="Cwl-cd-zhY" eventType="touchUpInside" id="bDw-n7-hAd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.45098039220000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Jxq-oY-hWW"/>
                     </view>
+                    <connections>
+                        <outlet property="addLabel" destination="yyH-Rq-WqX" id="rmW-vn-aW1"/>
+                        <outlet property="emailTextField" destination="arU-hX-0zB" id="1GB-h6-uUn"/>
+                        <outlet property="nameTextField" destination="Iwe-II-ZNe" id="G8Y-Fk-l7Q"/>
+                        <outlet property="subjectTextField" destination="hrC-wK-SRR" id="aFi-en-afD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0VM-Fb-bo5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4757.6000000000004" y="1467.616191904048"/>
+            <point key="canvasLocation" x="3438" y="2157"/>
         </scene>
         <!--Item-->
         <scene sceneID="raO-2j-NpT">
@@ -583,7 +516,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljj-IP-ZiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3400" y="2157.1214392803599"/>
+            <point key="canvasLocation" x="3438" y="788"/>
+        </scene>
+        <!--Tutors-->
+        <scene sceneID="Z6h-d0-R3Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bFY-vZ-M3J" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tutors" image="list" id="LgG-bO-rFK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D0B-2y-AeE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dfn-En-1CD" kind="relationship" relationship="rootViewController" id="7hT-PB-kWB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJP-fY-lWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023" y="2157"/>
         </scene>
     </scenes>
     <resources>

@@ -15,64 +15,73 @@ class AddPeerTutorViewController: UIViewController {
     var refTutors: DatabaseReference!
 
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var subjectTextField: UITextField!
-    @IBOutlet weak var labelMessage: UILabel!
-    
-    @IBOutlet weak var tableViewTutors: UITableView!
-    
-    var tutorList = [TutorModel]()
-    
+    let subject = ["Math and Science", "Writing"]
+    var selectedSubject: String?
    
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tutorList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AddPeerTutorTableViewCell
-        let tutor: TutorModel
-        
-        tutor = tutorList[indexPath.row]
-        
-        cell.nameLabel.text = tutor.name
-        cell.subjectLabel.text = tutor.subject
-        
-        return cell
-    }
-    
-    @IBAction func addPeerTutorTapped(_ sender: Any) {
-        addTutors()
-    }
-
+    @IBOutlet weak var addLabel: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        refTutors = Database.database().reference().child("PeerTutors")
-        refTutors.observe(DataEventType.value, with: { (snapshot) in
-            if snapshot.childrenCount > 0 {
-                self.tutorList.removeAll()
+        createSubjectPicker()
+        addLabel.layer.cornerRadius = 6
+    }
+    func createSubjectPicker() {
+        let subjectPicker = UIPickerView()
+        subjectPicker.delegate = self
+        
+        subjectTextField.inputView = subjectPicker
+    }
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        guard let _ = Auth.auth().currentUser,
+            let name = nameTextField.text,
+            let email = emailTextField.text,
+            let subject = subjectTextField.text
+
+            else {
+                let error = ""
+                //Tells the user that there is an error and then gets firebase to tell them the error
+                let alertController = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
                 
-                for tutor in snapshot.children.allObjects as! [DataSnapshot] {
-                    let tutorObject = tutor.value as? [String:AnyObject]
-                    let tutorName = tutorObject?["tutorName"]
-                    let tutorSubject = tutorObject?["tutorSubject"]
-                    
-                    let tutor = TutorModel(name: tutorName as! String?, subject: tutorSubject as! String?)
-                    
-                    self.tutorList.append(tutor)
-                }
-                self.tableViewTutors.reloadData()
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+                return
+        }
+        let tutor = ["name": name, "email": email, "subject": subject] as [String : Any]
+        let ref = Database.database().reference().child("Peer Tutor").childByAutoId()
+        
+        ref.setValue(tutor) { (error, ref) in
+            if let error = error {
+                assertionFailure(error.localizedDescription)
+                return
             }
-        })
+            ref.observeSingleEvent(of: .value, with: { (snapshot) in
+                _ = User(snapshot: snapshot)
+            })
+        }
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CurrentTutors")
+        self.present(vc!, animated: true, completion: nil)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+}
+extension AddPeerTutorViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    func addTutors(){
-        let key = refTutors.childByAutoId().key
-        let tutor = ["tutorName": nameTextField.text! as String,
-                     "tutorSubject": subjectTextField.text! as String
-                    ] as [String : Any]
-        refTutors.child(key).setValue(tutor)
-        labelMessage.text = "Peer Tutor Added"
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return subject.count
     }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return subject[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedSubject = subject[row]
+        subjectTextField.text = selectedSubject
+    }
+    
 }
