@@ -12,9 +12,7 @@ import CoreLocation
 
 class StudentMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
     {
-    
     @IBOutlet weak var mapView2: MKMapView!
-    
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
