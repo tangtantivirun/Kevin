@@ -10,7 +10,6 @@
 		24034E15203A77BA0051561B /* StudentMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24034E14203A77BA0051561B /* StudentMapViewController.swift */; };
 		24034E17203B4C440051561B /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24034E16203B4C440051561B /* Member.swift */; };
 		240DE0F42030B29600EDDB37 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DE0F32030B29600EDDB37 /* Time.swift */; };
-		240DE0F62030CC5000EDDB37 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DE0F52030CC5000EDDB37 /* RequestTableViewController.swift */; };
 		240DE0F82030D08A00EDDB37 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DE0F72030D08A00EDDB37 /* Requests.swift */; };
 		24216ECC2014189900457CD2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24216ECB2014189900457CD2 /* GradientView.swift */; };
 		24216ED22015993900457CD2 /* PeerTutorTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24216ED12015993900457CD2 /* PeerTutorTab.storyboard */; };
@@ -56,7 +55,6 @@
 		24034E14203A77BA0051561B /* StudentMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentMapViewController.swift; sourceTree = "<group>"; };
 		24034E16203B4C440051561B /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		240DE0F32030B29600EDDB37 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Time.swift; path = ../Time.swift; sourceTree = "<group>"; };
-		240DE0F52030CC5000EDDB37 /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		240DE0F72030D08A00EDDB37 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		24216ECB2014189900457CD2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		24216ED12015993900457CD2 /* PeerTutorTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PeerTutorTab.storyboard; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 				248F7EAD20292AE6002C6114 /* PeerTutorViewController.swift */,
 				24F55844203681CC00550DF0 /* PeerTutorAboutTheApp.swift */,
 				24F55846203681E700550DF0 /* PeerTutorHowToUse.swift */,
-				240DE0F52030CC5000EDDB37 /* RequestTableViewController.swift */,
 				8B1A9B37202DE661005E2E05 /* PeerTutorMapViewController.swift */,
 				24BF395D203BC47C00B47244 /* CurrentRequestViewController.swift */,
 				24BF3961203BCDC400B47244 /* CurrentRequestTableViewCell.swift */,
@@ -390,7 +387,6 @@
 				24BF3968203D4CB700B47244 /* PastRequestViewController.swift in Sources */,
 				8B1A9B38202DE661005E2E05 /* PeerTutorMapViewController.swift in Sources */,
 				240DE0F42030B29600EDDB37 /* Time.swift in Sources */,
-				240DE0F62030CC5000EDDB37 /* RequestTableViewController.swift in Sources */,
 				24E43AB02029609C00FBF232 /* AddPeerTutorTableViewCell.swift in Sources */,
 				2426F450203F13F900532CC8 /* CurrentPeerTutorViewController.swift in Sources */,
 				246C4884201E1BFC00C1EAAB /* User.swift in Sources */,

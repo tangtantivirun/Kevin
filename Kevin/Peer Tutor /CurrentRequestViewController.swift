@@ -14,7 +14,6 @@ import FirebaseAuth
 class CurrentRequestViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var requests = [GetRequest]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -60,4 +59,5 @@ extension CurrentRequestViewController: UITableViewDataSource {
         }
     }
 }
+
 
