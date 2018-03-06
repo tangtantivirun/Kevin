@@ -356,7 +356,7 @@ We put a lot of thought into it, and we hope you love it.</string>
         <scene sceneID="UHU-Hl-zYT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FeB-Ur-FF3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="tCB-u3-twu"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="tCB-u3-twu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3D-GH-hH3">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -514,8 +514,8 @@ We put a lot of thought into it, and we hope you love it.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Home" width="32" height="32"/>
         <image name="find" width="32" height="32"/>
-        <image name="home" width="32" height="32"/>
         <image name="list" width="32" height="32"/>
     </resources>
 </document>

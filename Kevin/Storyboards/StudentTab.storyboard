@@ -333,7 +333,7 @@ If needed, admins have the ability to disable specific user accounts and bar acc
         <scene sceneID="HyN-Fl-EPZ">
             <objects>
                 <navigationController storyboardIdentifier="StudentHome" automaticallyAdjustsScrollViewInsets="NO" id="BHX-NW-GIF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="yot-Kf-meY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="yot-Kf-meY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="asA-RC-SQW">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -503,9 +503,9 @@ If needed, admins have the ability to disable specific user accounts and bar acc
         </scene>
     </scenes>
     <resources>
+        <image name="Home" width="32" height="32"/>
         <image name="add" width="32" height="32"/>
         <image name="find" width="32" height="32"/>
-        <image name="home" width="32" height="32"/>
         <image name="list" width="32" height="32"/>
     </resources>
 </document>
