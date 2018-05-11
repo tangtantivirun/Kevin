@@ -18,7 +18,6 @@
         <!--PeerTutorConnect-->
         <scene sceneID="0PQ-2Z-Ryv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv3-IZ-qA9" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="Main" id="BES-37-Fh9" customClass="ViewController" customModule="Kevin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6qb-uh-S2e" customClass="View" customModule="Kevin">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -116,6 +115,7 @@
                         <outlet property="passwordTextField" destination="qG5-3S-fJn" id="CM6-b2-go4"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv3-IZ-qA9" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1444" y="132"/>
         </scene>
@@ -341,15 +341,6 @@
                                 <color key="textColor" red="0.043137254899999998" green="0.1019607843" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHW-fQ-eDN">
-                                <rect key="frame" x="129" y="142" width="116" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="lNX-Fe-PMp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                <color key="textColor" red="0.043137254899999998" green="0.1019607843" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n8T-l7-f8l">
                                 <rect key="frame" x="0.0" y="209" width="375" height="120"/>
                                 <subviews>
@@ -419,16 +410,25 @@
                                     <action selector="logoutAction:" destination="qol-kx-R44" eventType="touchUpInside" id="nDH-K5-rwK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHW-fQ-eDN">
+                                <rect key="frame" x="49" y="142" width="277" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lNX-Fe-PMp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="0.043137254899999998" green="0.1019607843" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.63921568630000003" green="0.80784313730000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lHW-fQ-eDN" firstAttribute="leading" secondItem="Nri-sU-3wh" secondAttribute="leading" constant="129" id="9lz-VH-j6s"/>
+                            <constraint firstItem="lHW-fQ-eDN" firstAttribute="leading" secondItem="Nri-sU-3wh" secondAttribute="leading" constant="49" id="9lz-VH-j6s"/>
                             <constraint firstItem="n8T-l7-f8l" firstAttribute="centerX" secondItem="lHW-fQ-eDN" secondAttribute="centerX" id="Nsn-IG-eet"/>
                             <constraint firstItem="n8T-l7-f8l" firstAttribute="top" secondItem="lHW-fQ-eDN" secondAttribute="bottom" constant="46" id="Pjz-bX-tNc"/>
                             <constraint firstItem="aez-23-W1F" firstAttribute="top" secondItem="n8T-l7-f8l" secondAttribute="bottom" constant="83" id="RGb-Do-RP3"/>
                             <constraint firstAttribute="trailing" secondItem="Nri-sU-3wh" secondAttribute="trailing" id="Y5C-Ur-gxo"/>
                             <constraint firstItem="aez-23-W1F" firstAttribute="centerX" secondItem="n8T-l7-f8l" secondAttribute="centerX" id="eQB-OS-G0k"/>
-                            <constraint firstItem="lHW-fQ-eDN" firstAttribute="leading" secondItem="n8T-l7-f8l" secondAttribute="leading" constant="129" id="fux-GJ-f9I"/>
+                            <constraint firstItem="lHW-fQ-eDN" firstAttribute="leading" secondItem="n8T-l7-f8l" secondAttribute="leading" constant="49" id="fux-GJ-f9I"/>
                             <constraint firstItem="lHW-fQ-eDN" firstAttribute="top" secondItem="Nri-sU-3wh" secondAttribute="bottom" constant="8" symbolic="YES" id="k3a-Es-V9j"/>
                             <constraint firstItem="Nri-sU-3wh" firstAttribute="top" secondItem="5Cv-ZC-7sp" secondAttribute="top" constant="92" id="omm-Fo-vXe"/>
                             <constraint firstItem="Nri-sU-3wh" firstAttribute="leading" secondItem="5Cv-ZC-7sp" secondAttribute="leading" id="tZD-Mw-9Y6"/>
